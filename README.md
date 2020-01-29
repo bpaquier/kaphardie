@@ -1,4 +1,4 @@
-# kaphardie
+# Kap Hardie
 ## projet fin de semestre :
 ## Bastien Paquier
 ## Constance Pétillot
