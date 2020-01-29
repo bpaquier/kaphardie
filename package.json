@@ -1,0 +1,24 @@
+{
+  "name": "kaphardie",
+  "version": "1.0.0",
+  "description": "projet fin de semestre",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastien17-dev/kaphardie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bastien17-dev/kaphardie/issues"
+  },
+  "homepage": "https://github.com/bastien17-dev/kaphardie#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
