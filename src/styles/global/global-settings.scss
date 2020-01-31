@@ -1,20 +1,60 @@
+body {
+  font-family: $text-font-family, sans-serif;
+  color: $primary-font-color;
+}
+
 h1 {
   font-family: $title-font-familiy, sans-serif;
   color: $primary-font-color;
-  font-size: 32px;
+  font-size: 45px;
 }
 
 h2 {
   font-family: $title-font-familiy, sans-serif;
   color: $secondary-color;
-  font-size: 28px;
+  font-size: 18px;
 }
 
-.text {
-  font-family: $text-font-family, sans-serif;
-  color: $primary-font-color;
+// CTA
+
+button {
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.icon {
-  width: 106px;
+.cta {
+  padding: 16px 40px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.cta--dark {
+  background-color: $orange-color;
+  border: 2px solid $primary-background-color;
+  color: $primary-background-color;
+}
+
+.cta--light {
+  background-color: $primary-background-color;
+  border: 2px solid $orange-color;
+  color: $orange-color;
+}
+
+// LOGO
+
+.logo {
+  font-family: 'Baumans';
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.logo--header {
+  color: $orange-color;
+}
+
+.logo--footer {
+  color: $primary-background-color;
 }
