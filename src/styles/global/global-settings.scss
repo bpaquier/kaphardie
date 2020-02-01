@@ -3,10 +3,17 @@ body {
   color: $primary-font-color;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   font-family: $title-font-familiy, sans-serif;
   color: $primary-font-color;
   font-size: 45px;
+  text-transform: uppercase;
 }
 
 h2 {

@@ -1,0 +1,83 @@
+.choice {
+  margin-top: 16px;
+  width: 256px;
+  border-bottom: 1px $primary-font-color solid;
+}
+
+.choice__title {
+  font-size: 14px;
+  text-align: left;
+
+  span {
+    font-size: 20px;
+  }
+}
+
+.samples {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+
+  .sample {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 24px;
+
+    &.is-selected {
+      border: 2px solid $secondary-color;
+    }
+  }
+
+  .sample--barkCloth {
+    background-image: url('/assets/landing/personnalisation/tissus/bracklothImage.png');
+  }
+  .sample--wax {
+    background-image: url('/assets/landing/personnalisation/tissus/waxImage.png');
+  }
+  .sample--batik {
+    background-image: url('/assets/landing/personnalisation/tissus/batikImage.png');
+  }
+  .sample--lin {
+    background-image: url('/assets/landing/personnalisation/tissus/linImage.png');
+  }
+  .sample--jute {
+    background-image: url('/assets/landing/personnalisation/tissus/juteImage.png');
+  }
+
+  .sample--liege {
+    background-image: url('/assets/landing/personnalisation/visieres/liegeImage.png');
+  }
+  .sample--pinatex {
+    background-image: url('/assets/landing/personnalisation/visieres/pinalatexImage.png');
+  }
+
+  .sample--bordeaux {
+    background-color: #6d071a;
+  }
+  .sample--orange {
+    background-color: $orange-color;
+  }
+  .sample--noir {
+    background-color: black;
+  }
+}
+
+.logos {
+  margin-right: 32px;
+  padding: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.is-selected {
+    border: 2px solid $secondary-color;
+  }
+
+  .logo-sample {
+    font-size: 24px;
+  }
+}
