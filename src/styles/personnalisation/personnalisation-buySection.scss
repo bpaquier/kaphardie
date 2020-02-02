@@ -1,5 +1,5 @@
 .personnalisation__buy-section {
-  margin-top: 24px;
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,14 +19,13 @@
     height: 24px;
     display: flex;
     align-items: center;
-    padding-left: 5%;
+    justify-content: space-around;
 
-    svg {
-      position: absolute;
-      top: 38%;
-      left: 60%;
-      width: 10px;
-      height: 10px;
+    .quantity__icon {
+      svg {
+        width: 10px;
+        height: 8px;
+      }
     }
   }
 
@@ -67,4 +66,9 @@
     font-size: 8px;
     text-decoration: underline;
   }
+}
+
+.buy-section__cta {
+  margin-top: 16px;
+  padding: 8px 40px;
 }
