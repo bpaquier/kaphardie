@@ -391,8 +391,10 @@
     <main>
       <section class="personnalisation">
         <h1 class="personnalisation__title">créez votre casquette</h1>
-        <div class="personnalisation__illustration illustration">
+        <div class="personnalisation__content">
+        <article class="personnalisation__illustration illustration">
           <div class="illustration__main-pictures main-picture">
+            <p><svg><use xlink:href="#icon-heart"></use></svg></p>
             <img
               class="main-picture main-picture--1"
               src="/assets/landing/personnalisation/mainImage.png"
@@ -413,8 +415,8 @@
               />
             </div>
           </div>
-        </div>
-        <div class="personnalisation__choice">
+        </article>
+        <article class="personnalisation__choice">
           <div class="choice choice__tissu">
             <h1 class="choice__title"><span>tissu : </span> batik</h1>
             <div class="choice__tissu__tissus samples">
@@ -452,31 +454,56 @@
               <div class="logos"><span class="logo logo-sample">HK</span></div>
             </div>
           </div>
-        </div>
-        <div class="personnalisation__buy-section buy-section">
-          <div class="buy-section__quantity-price">
-            <div class="quantity">
-              <p class="quantity__value">1</p>
-              <p class="quantity__icon">
-                <svg fill="none">
-                  <use xlink:href="#icon-arrowDown"></use>
+          <div class="personnalisation__buy-section buy-section">
+            <div class="buy-section__quantity-price">
+              <div class="quantity">
+                <p class="quantity__value">1</p>
+                <p class="quantity__icon">
+                  <svg fill="none">
+                    <use xlink:href="#icon-arrowDown"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="price">249,99 €</div>
+            </div>
+            <div class="buy-section__size size">
+              <div class="size__selection">
+                <p class="selection">Choisissez votre taille</p>
+                <p class="svg">
+                  <svg><use xlink:href="#icon-plus"></use></svg>
+                </p>
+              </div>
+              <div class="size__guide">Guide des tailles</div>
+            </div>
+            <button class="buy-section__cta cta cta--dark">
+              ajouter au panier
+            </button>
+          </div>
+          <div class="personnalisation__rassurance">
+            <div class='personnalisation__rassurance__part'>
+              <p>
+                <svg class="valid-icon">
+                  <use xlink:href="#icon-valid"></use>
                 </svg>
+                Livraison 3 à 5 jours
               </p>
-            </div>
-            <div class="price">249,99 €</div>
-          </div>
-          <div class="buy-section__size size">
-            <div class="size__selection">
-              <p class="selection">Choisissez votre taille</p>
-              <p class="svg">
-                <svg><use xlink:href="#icon-plus"></use></svg>
+              <p>Guide d'entretien</p>
+            </div class='personnalisation__rassurance__part'>
+            <div class='personnalisation__rassurance__part'>
+              <p>
+                <svg class="valid-icon">
+                  <use xlink:href="#icon-valid"></use>
+                </svg>
+                Retour gratuit
               </p>
+              <p>Composition</p>
             </div>
-            <div class="size__guide">Guide des tailles</div>
+            <div class='personnalisation__rassurance__part'>
+              <p>Tissus en quantité limitée</p>
+              <p>Guide d'entretien</p>
+            </div>
           </div>
-          <button class="buy-section__cta cta cta--dark">
-            ajouter au panier
-          </button>
+        </article>
         </div>
       </section>
     </main>

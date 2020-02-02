@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 390px;
 }
 
 .buy-section__quantity-price {
@@ -21,6 +22,15 @@
     align-items: center;
     justify-content: space-around;
 
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media (min-width: 1100px) {
+      width: 80px;
+      height: 36px;
+    }
+
     .quantity__icon {
       svg {
         width: 10px;
@@ -32,6 +42,10 @@
   .price {
     font-size: 24px;
     font-family: $title-font-family;
+
+    @media (min-width: 1100px) {
+      font-size: 32px;
+    }
   }
 }
 
@@ -50,8 +64,16 @@
     width: 55%;
     border-bottom: 1px $primary-font-color solid;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     .selection {
       font-size: 12px;
+
+      @media (min-width: 1100px) {
+        font-size: 14px;
+      }
     }
 
     .svg {
@@ -65,10 +87,47 @@
   .size__guide {
     font-size: 8px;
     text-decoration: underline;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
 .buy-section__cta {
   margin-top: 16px;
-  padding: 8px 40px;
+  padding: 16px 40px;
+
+  @media (min-width: 1100px) {
+    width: 100%;
+  }
+}
+
+.personnalisation__rassurance {
+  width: 80%;
+  max-width: 390px;
+  color: $secondary-font-color;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .personnalisation__rassurance__part {
+    margin-top: 8px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    svg {
+      color: $secondary-font-color;
+      width: 13px;
+      height: 10px;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 .personnalisation__choice {
   width: 100%;
+  max-width: 580px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,8 +16,16 @@
   font-size: 14px;
   text-align: left;
 
+  @media (min-width: 1100px) {
+    font-size: 20px;
+  }
+
   span {
     font-size: 20px;
+
+    @media (min-width: 1100px) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -32,6 +41,17 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin-right: 24px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    @media (min-width: 1100px) {
+      width: 40px;
+      height: 40px;
+      margin-right: 32px;
+    }
 
     &.is-selected {
       border: 2px solid $secondary-color;
@@ -79,6 +99,10 @@
 .logos {
   margin-right: 32px;
   padding: 8px;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &:last-child {
     margin-right: 0;
