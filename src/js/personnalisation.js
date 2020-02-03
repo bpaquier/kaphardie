@@ -8,6 +8,7 @@ function selectProduct(product) {
       prevSelection.classList.remove('is-selected');
       element.classList.add('is-selected');
       prevSelection = element;
+      chooseView();
       chooseTissu();
       chooseVisiere();
       chooseBouton();
@@ -82,24 +83,40 @@ function chooseSizePersonnalisation() {
   });
 }
 
+function chooseView() {
+  let $casquettesViews = document.querySelectorAll('.view-picture');
+  let $casquetteOrientation = document.querySelectorAll('.main__pictures');
+  let prevSelection = document.querySelector('.main__pictures.is-visible');
+  for (let i = 0; i < $casquettesViews.length; i++) {
+    if ($casquettesViews[i].classList.contains('is-selected')) {
+      prevSelection.classList.remove('is-visible');
+      $casquetteOrientation[i].classList.add('is-visible');
+      prevSelection = $casquetteOrientation[i];
+    }
+  }
+}
+
 function chooseTissu() {
   let colors = document.querySelectorAll('.sample--tissu');
-  let pictures = document.querySelectorAll('.main-picture');
-  let prevPicture = document.querySelector('.main-picture.is-visible');
+  let picturesFace = document.querySelectorAll('.picture__face');
+  let picturesSide = document.querySelectorAll('.picture__side');
+  let prevPictureFace = document.querySelector('.picture__face.is-visible');
+  let prevPictureSide = document.querySelector('.picture__side.is-visible');
   for (let i = 0; i < colors.length; i++) {
     if (colors[i].classList.contains('is-selected')) {
-      prevPicture.classList.remove('is-visible');
-      pictures[i].classList.add('is-visible');
-      prevPicture = pictures[i];
+      prevPictureFace.classList.remove('is-visible');
+      picturesFace[i].classList.add('is-visible');
+      prevPictureFace = picturesFace[i];
+      prevPictureSide.classList.remove('is-visible');
+      picturesSide[i].classList.add('is-visible');
+      prevPictureSide = picturesSide[i];
     }
   }
 }
 
 function chooseVisiere() {
   let $visiere = document.querySelector('.visiere-picture--face');
-  let selectedElement = document.querySelector(
-    '.sample--visiere--face.is-selected'
-  );
+  let selectedElement = document.querySelector('.sample--visiere.is-selected');
   if (selectedElement.classList.contains('sample--pinatex')) {
     $visiere.classList.add('is-visible');
   } else {

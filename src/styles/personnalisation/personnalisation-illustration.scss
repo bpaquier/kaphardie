@@ -50,11 +50,13 @@
 }
 
 .illustration__main-pictures {
+  margin-top: 20px;
   position: relative;
   width: 190px;
   height: 180px;
 
   @media (min-width: 1100px) {
+    margin-top: 30px;
     width: 360px;
     height: 360px;
   }
@@ -75,7 +77,29 @@
       }
     }
   }
+}
 
+.main__pictures {
+  display: none;
+}
+
+.main__pictures.is-visible {
+  display: block;
+}
+
+.main__pictures--face {
+  .picture__face {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+    &.is-visible {
+      display: block;
+    }
+  }
   .bouton__face {
     position: absolute;
     width: 15px;
@@ -89,20 +113,7 @@
     }
   }
 
-  .main-picture {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90%;
-
-    &.is-visible {
-      display: block;
-    }
-  }
-
-  .main-picture.main-picture--1 {
+  .picture__face.picture--1 {
     left: 1px;
     width: 102%;
     @media (min-width: 1100px) {
@@ -111,7 +122,7 @@
     }
   }
 
-  .main-picture.main-picture--1.is-visible ~ .bouton__face {
+  .picture__face.picture--1.is-visible ~ .bouton__face {
     left: 90px;
     top: 11.6px;
     @media (min-width: 1100px) {
@@ -120,7 +131,7 @@
     }
   }
 
-  .main-picture.main-picture--2 {
+  .picture__face.picture--2 {
     width: 105%;
     top: 1px;
     @media (min-width: 1100px) {
@@ -128,7 +139,7 @@
     }
   }
 
-  .main-picture.main-picture--2.is-visible ~ .bouton__face {
+  .picture__face.picture--2.is-visible ~ .bouton__face {
     left: 92px;
     top: 14.2px;
     @media (min-width: 1100px) {
@@ -137,7 +148,7 @@
     }
   }
 
-  .main-picture.main-picture--3 {
+  .picture__face.picture--3 {
     width: 102%;
     left: 2px;
     @media (min-width: 1100px) {
@@ -146,7 +157,7 @@
     }
   }
 
-  .main-picture.main-picture--3.is-visible ~ .bouton__face {
+  .picture__face.picture--3.is-visible ~ .bouton__face {
     left: 92px;
     top: 12.2px;
     @media (min-width: 1100px) {
@@ -156,7 +167,7 @@
     }
   }
 
-  .main-picture.main-picture--4 {
+  .picture__face.picture--4 {
     width: 105%;
     top: 1px;
     @media (min-width: 1100px) {
@@ -165,7 +176,7 @@
     }
   }
 
-  .main-picture.main-picture--4.is-visible ~ .bouton__face {
+  .picture__face.picture--4.is-visible ~ .bouton__face {
     left: 91px;
     top: 14.8px;
     @media (min-width: 1100px) {
@@ -175,7 +186,7 @@
     }
   }
 
-  .main-picture.main-picture--5 {
+  .picture__face.picture--5 {
     width: 105%;
     left: 1px;
     top: 2px;
@@ -185,7 +196,7 @@
     }
   }
 
-  .main-picture.main-picture--5.is-visible ~ .bouton__face {
+  .picture__face.picture--5.is-visible ~ .bouton__face {
     left: 91px;
     top: 13.2px;
     @media (min-width: 1100px) {
@@ -208,6 +219,21 @@
       width: 100%;
       top: 23px;
       transform: scale(1.06);
+    }
+  }
+}
+
+.main__pictures--side {
+  .picture__side {
+    display: none;
+    position: absolute;
+    width: 130%;
+    height: 70%;
+    top: 30px;
+    left: -20px;
+
+    &.is-visible {
+      display: block;
     }
   }
 }
