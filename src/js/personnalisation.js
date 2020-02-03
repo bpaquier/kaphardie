@@ -8,6 +8,7 @@ function selectProduct(product) {
       prevSelection.classList.remove('is-selected');
       element.classList.add('is-selected');
       prevSelection = element;
+      showCap();
     });
   });
 }
@@ -77,6 +78,21 @@ function chooseSizePersonnalisation() {
       canClose = false;
     }
   });
+}
+
+function showCap() {
+  let colors = document.querySelectorAll('.sample--tissu');
+  let pictures = document.querySelectorAll('.main-picture');
+  let prevPicture = document.querySelector('.main-picture.is-visible');
+  console.log(colors);
+  console.log(pictures);
+  for (let i = 0; i < colors.length; i++) {
+    if (colors[i].classList.contains('is-selected')) {
+      prevPicture.classList.remove('is-visible');
+      pictures[i].classList.add('is-visible');
+      prevPicture = pictures[i];
+    }
+  }
 }
 
 selectProduct('sample--visiere');
