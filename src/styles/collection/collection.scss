@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  
 }
 .collection__title {
   text-align: center;
@@ -14,6 +15,7 @@
   display: grid;
   grid-template-columns: minmax(380px, 500px);
   grid-template-rows: repeat(12, 250px);
+  margin: 0px 60px 0px 60px;
   gap: 8px;
 
   .collection__cap {
@@ -112,6 +114,7 @@
 .cap__size {
   padding: 10px;
   background-color: $secondary-color-opacity-30;
+  cursor: pointer;
 }
 .price.cap__price {
   font-size: 18px;
@@ -134,4 +137,11 @@
   height: 24px;
   border: none;
   border-radius: 3px;
+}
+
+.size--active{
+  background-color:$secondary-color;
+} 
+.quantity__choice--up{
+  top: -180px;
 }
