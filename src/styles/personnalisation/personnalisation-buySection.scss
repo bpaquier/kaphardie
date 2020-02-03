@@ -2,7 +2,7 @@
   margin-top: 32px;
   display: flex;
   flex-direction: column;
-  //align-items: center;
+  align-items: center;
   width: 100%;
   max-width: 390px;
 }
@@ -57,6 +57,7 @@
 }
 .quantity__choice {
   position: absolute;
+
   top: 24px;
   border: 1px solid $primary-font-color;
   width: 80px;
@@ -145,6 +146,7 @@
     padding: 8px;
     background-color: $primary-background-color;
     top: 38px;
+    left: -12%;
 
     &.is-visible {
       display: flex;
