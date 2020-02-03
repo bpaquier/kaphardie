@@ -10,6 +10,7 @@ function selectProduct(product) {
       prevSelection = element;
       chooseTissu();
       chooseVisiere();
+      chooseBouton();
     });
   });
 }
@@ -104,9 +105,25 @@ function chooseVisiere() {
   }
 }
 
+function chooseBouton() {
+  let boutonNoir = document.querySelector('.bouton__face--noir');
+  let boutonBordeaux = document.querySelector('.bouton__face--bordeaux');
+  let selectedElement = document.querySelector('.sample__bouton.is-selected');
+  if (selectedElement.classList.contains('sample--bordeaux')) {
+    boutonBordeaux.classList.add('is-visible');
+    boutonNoir.classList.remove('is-visible');
+  } else if (selectedElement.classList.contains('sample--noir')) {
+    boutonNoir.classList.add('is-visible');
+    boutonBordeaux.classList.remove('is-visible');
+  } else {
+    boutonNoir.classList.remove('is-visible');
+    boutonBordeaux.classList.remove('is-visible');
+  }
+}
+
 selectProduct('sample--visiere');
 selectProduct('sample--tissu');
-selectProduct('sample--bouton');
+selectProduct('sample__bouton');
 selectProduct('logos');
 selectProduct('view-picture');
 chooseQuantity();
