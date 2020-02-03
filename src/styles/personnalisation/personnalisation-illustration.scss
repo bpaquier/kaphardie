@@ -105,7 +105,8 @@
   }
 
   .main-picture.main-picture--3 {
-    width: 103%;
+    width: 102%;
+    left: 2px;
     @media (min-width: 1100px) {
       top: -2px;
       left: -5px;
@@ -131,13 +132,14 @@
   }
 
   .visiere-picture--face {
-    display: block;
+    display: none;
     position: absolute;
     width: 105%;
     top: 3px;
-    /*  &.is-visible {
+
+    &.is-visible {
       display: block;
-    } */
+    }
 
     @media (min-width: 1100px) {
       width: 100%;
