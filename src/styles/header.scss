@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(/assets/landing/Header/landingPageBackground.gif);
+  background-size: auto 100vh;
+  background-position: 325px;
+}
+
+.header__nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  padding: 0 20px;
+}
+
+.header__logoMobilHK {
+  width: 40px;
+  height: 40px;
+}
+
+.header__iconsContainer {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+
+  .header__icon {
+    width: 20px;
+    height: 20px;
+    fill: $primary-background-color;
+  }
+}
+
+.header__content {
+  position: absolute;
+  top: 15%;
+  left: 6.25%;
+}
+
+.header__title {
+  width: 246px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $primary-background-color;
+  margin-bottom: 24px;
+}
+
+.header__subtitle {
+  width: 212px;
+  font-size: 12px;
+  color: $primary-background-color;
+}
