@@ -113,9 +113,16 @@
     }
 
     .svg {
+      transition: transform 0.3s;
       svg {
         width: 15px;
         height: 15px;
+      }
+    }
+
+    &.is-choosing {
+      .svg {
+        transform: rotate(45deg);
       }
     }
   }
@@ -139,20 +146,29 @@
     background-color: $primary-background-color;
     top: 38px;
 
+    &.is-visible {
+      display: flex;
+    }
     .size__choice--size {
       text-align: center;
-      background-color: $secondary-color;
+      background-color: $secondary-color-opacity-30;
       padding-top: 15px;
       width: 30%;
       height: 30px;
 
       &:hover {
         cursor: pointer;
+        background-color: $secondary-color;
       }
     }
   }
 }
 
+/* .size__selection.is-choosing {
+  .svg {
+    transform: rotate(45deg);
+  }
+} */
 .buy-section__cta {
   margin-top: 16px;
   padding: 16px 40px;
