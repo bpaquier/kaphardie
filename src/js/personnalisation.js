@@ -1,10 +1,10 @@
 function selectProduct(product) {
   let prevSelection = document.querySelector('.' + product + '.is-selected');
-  document.querySelectorAll('.' + product).forEach(product => {
-    product.addEventListener('click', function() {
+  document.querySelectorAll('.' + product).forEach(element => {
+    element.addEventListener('click', function() {
       prevSelection.classList.remove('is-selected');
-      product.classList.add('is-selected');
-      prevSelection = product;
+      element.classList.add('is-selected');
+      prevSelection = element;
     });
   });
 }
