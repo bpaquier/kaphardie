@@ -328,13 +328,34 @@
         <h1 class="personnalisation__title">créez votre casquette</h1>
         <div class="personnalisation__content">
         <article class="personnalisation__illustration illustration">
-          <div class="illustration__main-pictures main-picture">
+          <div class="illustration__main-pictures">
             <p><svg><use xlink:href="#icon-heart"></use></svg></p>
             <img
-              class="main-picture main-picture--1"
-              src="/assets/landing/personnalisation/mainImage.png"
+              class="main-picture main-picture--1 is-visible"
+              src="assets/casquettes/Casquette_Face_Barkcloth_liege_orange.png"
               alt="casquette personnalisée"
             />
+            <img
+            class="main-picture main-picture--2"
+            src="assets/casquettes/Casquette_Face_Wax_liege_orange.png"
+            alt="casquette personnalisée"
+          />
+          <img
+          class="main-picture main-picture--3"
+          src="assets/casquettes/Casquette_Face_Batik_liege_orange.png"
+          alt="casquette personnalisée"
+        />
+        <img
+        class="main-picture main-picture--4"
+        src="assets/casquettes/Casquette_Face_Lin_liege_orange.png"
+        alt="casquette personnalisée"
+      />
+      <img
+      class="main-picture main-picture--5"
+      src="assets/casquettes/Casquette_Face_Jute_liege_orange.png"
+      alt="casquette personnalisée"
+    />
+    
           </div>
           <div class="illustration__views-pictures ">
             <div class="view-picture view-picture--front is-selected">
@@ -355,9 +376,9 @@
           <div class="choice choice__tissu">
             <h1 class="choice__title"><span>tissu : </span> batik</h1>
             <div class="choice__tissu__tissus samples">
-              <div class="sample sample--tissu sample--barkCloth" value="bark cloth"></div>
+              <div class="sample sample--tissu sample--barkCloth is-selected" value="bark cloth"></div>
               <div class="sample sample--tissu sample--wax" value="wax"></div>
-              <div class="sample sample--tissu sample--batik is-selected" value="batik"></div>
+              <div class="sample sample--tissu sample--batik" value="batik"></div>
               <div class="sample sample--tissu sample--lin" value="lin"></div>
               <div class="sample sample--tissu sample--jute" value="toile de jute"></div>
             </div>
@@ -391,15 +412,22 @@
           </div>
           <div class="personnalisation__buy-section buy-section">
             <div class="buy-section__quantity-price">
-              <div class="quantity">
-                <p class="quantity__value">1</p>
-                <p class="quantity__icon">
-                  <svg fill="none">
-                    <use xlink:href="#icon-arrowDown"></use>
-                  </svg>
-                </p>
+                <div class="quantity">
+                  <p class="quantity__value">1</p>
+                  <p class="quantity__icon">
+                    <svg fill="none">
+                      <use xlink:href="#icon-arrowDown"></use>
+                    </svg>
+                  </p>
+                </div>
+              <div class="price"></div>
+              <div class="quantity__choice">
+                <p class='quantity__choice--value' value='1'>1</p>
+                <p class='quantity__choice--value' value='2'>2</p>
+                <p class='quantity__choice--value' value='3'>3</p>
+                <p class='quantity__choice--value' value='4'>4</p>
+                <p class='quantity__choice--value' value='5'>5</p>
               </div>
-              <div class="price">249,99 €</div>
             </div>
             <div class="buy-section__size size">
               <div class="size__selection">
@@ -409,6 +437,11 @@
                 </p>
               </div>
               <div class="size__guide">Guide des tailles</div>
+              <div class="size__choice">
+                <div class="size__choice--size">S-56-CM</div >
+                <div class="size__choice--size">M-58-CM</div>
+                <div class="size__choice--size">L-60-CM</div>
+              </div>
             </div>
             <button class="buy-section__cta cta cta--dark">
               ajouter au panier

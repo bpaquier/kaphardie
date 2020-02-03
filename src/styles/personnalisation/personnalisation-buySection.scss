@@ -2,12 +2,13 @@
   margin-top: 32px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
   width: 100%;
   max-width: 390px;
 }
 
 .buy-section__quantity-price {
+  position: relative;
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -39,6 +40,12 @@
     }
   }
 
+  .quantity.is-choosing {
+    .quantity__icon {
+      transform: rotate(180deg);
+    }
+  }
+
   .price {
     font-size: 24px;
     font-family: $title-font-family;
@@ -48,8 +55,37 @@
     }
   }
 }
+.quantity__choice {
+  position: absolute;
+  top: 24px;
+  border: 1px solid $primary-font-color;
+  width: 80px;
+  display: none;
+  flex-direction: column;
+  background-color: $primary-background-color;
+  z-index: 1;
+
+  @media (min-width: 1100px) {
+    top: 36px;
+  }
+  p {
+    height: 20px;
+    padding: 8px 0px;
+    padding-left: 20%;
+
+    &:hover {
+      cursor: pointer;
+      background: $tertiary-color;
+    }
+  }
+}
+
+.quantity__choice.is-visible {
+  display: flex;
+}
 
 .buy-section__size {
+  position: relative;
   width: 80%;
   height: 30px;
   margin-top: 16px;
@@ -77,9 +113,16 @@
     }
 
     .svg {
+      transition: transform 0.3s;
       svg {
         width: 15px;
         height: 15px;
+      }
+    }
+
+    &.is-choosing {
+      .svg {
+        transform: rotate(45deg);
       }
     }
   }
@@ -92,8 +135,40 @@
       cursor: pointer;
     }
   }
+
+  .size__choice {
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    width: 120%;
+    height: 48px;
+    padding: 8px;
+    background-color: $primary-background-color;
+    top: 38px;
+
+    &.is-visible {
+      display: flex;
+    }
+    .size__choice--size {
+      text-align: center;
+      background-color: $secondary-color-opacity-30;
+      padding-top: 15px;
+      width: 30%;
+      height: 30px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+      }
+    }
+  }
 }
 
+/* .size__selection.is-choosing {
+  .svg {
+    transform: rotate(45deg);
+  }
+} */
 .buy-section__cta {
   margin-top: 16px;
   padding: 16px 40px;
