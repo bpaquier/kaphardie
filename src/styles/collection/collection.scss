@@ -36,7 +36,13 @@
       width: 80px;
       height: 27px;
       position: relative;
+      padding: 4px 24px;
+      color: $orange-color;
       left: 73%;
+    }
+    .collection__button:hover {
+      background-color: $orange-color;
+      color: $primary-background-color;
     }
     .collection__speedbuy--desktop {
       background-color: $primary-background-color;
@@ -121,4 +127,11 @@
 .guid__size {
   font-size: 12px;
   text-decoration: underline;
+}
+
+.collection__addcta {
+  padding: 4px 24px;
+  height: 24px;
+  border: none;
+  border-radius: 3px;
 }
