@@ -84,6 +84,9 @@
     &.is-visible {
       display: block;
     }
+    @media (min-width: 1100px) {
+      width: 27px;
+    }
   }
 
   .main-picture {
@@ -107,10 +110,16 @@
       left: -8px;
     }
   }
+
   .main-picture.main-picture--1.is-visible ~ .bouton__face {
     left: 90px;
     top: 11.6px;
+    @media (min-width: 1100px) {
+      left: 163px;
+      top: 25px;
+    }
   }
+
   .main-picture.main-picture--2 {
     width: 105%;
     top: 1px;
@@ -122,6 +131,10 @@
   .main-picture.main-picture--2.is-visible ~ .bouton__face {
     left: 92px;
     top: 14.2px;
+    @media (min-width: 1100px) {
+      left: 164px;
+      top: 29.5px;
+    }
   }
 
   .main-picture.main-picture--3 {
@@ -136,6 +149,11 @@
   .main-picture.main-picture--3.is-visible ~ .bouton__face {
     left: 92px;
     top: 12.2px;
+    @media (min-width: 1100px) {
+      width: 29px;
+      left: 164px;
+      top: 22.5px;
+    }
   }
 
   .main-picture.main-picture--4 {
@@ -150,6 +168,11 @@
   .main-picture.main-picture--4.is-visible ~ .bouton__face {
     left: 91px;
     top: 14.8px;
+    @media (min-width: 1100px) {
+      width: 29px;
+      left: 164px;
+      top: 29.5px;
+    }
   }
 
   .main-picture.main-picture--5 {
@@ -165,6 +188,10 @@
   .main-picture.main-picture--5.is-visible ~ .bouton__face {
     left: 91px;
     top: 13.2px;
+    @media (min-width: 1100px) {
+      left: 166px;
+      top: 27.5px;
+    }
   }
 
   .visiere-picture--face {
