@@ -14,7 +14,6 @@ function selectProduct(product) {
 
 function chooseQuantity() {
   let canClose = false;
-  let $personnalisation = document.querySelector('.personnalisation');
   let $quantityChoosen = document.querySelector('.quantity__value');
   let $QuantitySelection = document.querySelector('.quantity');
   let $QuantityList = document.querySelector('.quantity__choice');
@@ -39,10 +38,42 @@ function chooseQuantity() {
       canClose = false;
     });
   });
-  $personnalisation.addEventListener('click', function() {
+  document.addEventListener('click', function() {
     if (canClose) {
       $QuantitySelection.classList.remove('is-choosing');
       $QuantityList.classList.remove('is-visible');
+      canClose = false;
+    }
+  });
+}
+
+function chooseSizePersonnalisation() {
+  let canClose = false;
+  let $selection = document.querySelector('.selection');
+  let $sizeSelection = document.querySelector('.size__selection');
+  let $sizechoice = document.querySelector('.size__choice');
+  let $userChoice = document.querySelectorAll('.size__choice--size');
+  $sizeSelection.addEventListener('click', function() {
+    if (!canClose) {
+      $sizechoice.classList.add('is-visible');
+      $sizeSelection.classList.add('is-choosing');
+      setTimeout(() => {
+        canClose = true;
+      }, 10);
+    }
+  });
+  $userChoice.forEach(element => {
+    element.addEventListener('click', function() {
+      $selection.innerHTML = element.innerHTML;
+      $sizechoice.classList.remove('is-visible');
+      $sizeSelection.classList.remove('is-choosing');
+      canClose = false;
+    });
+  });
+  document.addEventListener('click', function() {
+    if (canClose) {
+      $sizechoice.classList.remove('is-visible');
+      $sizeSelection.classList.remove('is-choosing');
       canClose = false;
     }
   });
@@ -54,3 +85,4 @@ selectProduct('sample--bouton');
 selectProduct('logos');
 selectProduct('view-picture');
 chooseQuantity();
+chooseSizePersonnalisation();
