@@ -97,7 +97,9 @@ function chooseTissu() {
 
 function chooseVisiere() {
   let $visiere = document.querySelector('.visiere-picture--face');
-  let selectedElement = document.querySelector('.sample--visiere.is-selected');
+  let selectedElement = document.querySelector(
+    '.sample--visiere--face.is-selected'
+  );
   if (selectedElement.classList.contains('sample--pinatex')) {
     $visiere.classList.add('is-visible');
   } else {
