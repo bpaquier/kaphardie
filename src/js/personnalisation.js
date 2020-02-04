@@ -12,6 +12,7 @@ function selectProduct(product) {
       chooseTissu();
       chooseVisiere();
       chooseBouton();
+      chooseLogoStyle();
     });
   });
 }
@@ -115,28 +116,52 @@ function chooseTissu() {
 }
 
 function chooseVisiere() {
-  let $visiere = document.querySelector('.visiere-picture--face');
+  let $visiereFace = document.querySelector('.visiere-picture--face');
+  let $visiereSide = document.querySelector('.visiere-picture--side');
   let selectedElement = document.querySelector('.sample--visiere.is-selected');
   if (selectedElement.classList.contains('sample--pinatex')) {
-    $visiere.classList.add('is-visible');
+    $visiereFace.classList.add('is-visible');
+    $visiereSide.classList.add('is-visible');
   } else {
-    $visiere.classList.remove('is-visible');
+    $visiereFace.classList.remove('is-visible');
+    $visiereSide.classList.remove('is-visible');
   }
 }
 
 function chooseBouton() {
-  let boutonNoir = document.querySelector('.bouton__face--noir');
-  let boutonBordeaux = document.querySelector('.bouton__face--bordeaux');
+  let boutonNoirFace = document.querySelector('.bouton__face--noir');
+  let boutonBordeauxFace = document.querySelector('.bouton__face--bordeaux');
+  let boutonNoirSide = document.querySelector('.bouton__side--noir');
+  let boutonBordeauxSide = document.querySelector('.bouton__side--bordeaux');
   let selectedElement = document.querySelector('.sample__bouton.is-selected');
   if (selectedElement.classList.contains('sample--bordeaux')) {
-    boutonBordeaux.classList.add('is-visible');
-    boutonNoir.classList.remove('is-visible');
+    boutonBordeauxFace.classList.add('is-visible');
+    boutonNoirFace.classList.remove('is-visible');
+    boutonBordeauxSide.classList.add('is-visible');
+    boutonNoirSide.classList.remove('is-visible');
   } else if (selectedElement.classList.contains('sample--noir')) {
-    boutonNoir.classList.add('is-visible');
-    boutonBordeaux.classList.remove('is-visible');
+    boutonNoirFace.classList.add('is-visible');
+    boutonBordeauxFace.classList.remove('is-visible');
+    boutonNoirSide.classList.add('is-visible');
+    boutonBordeauxSide.classList.remove('is-visible');
   } else {
-    boutonNoir.classList.remove('is-visible');
-    boutonBordeaux.classList.remove('is-visible');
+    boutonNoirFace.classList.remove('is-visible');
+    boutonBordeauxFace.classList.remove('is-visible');
+    boutonNoirSide.classList.remove('is-visible');
+    boutonBordeauxSide.classList.remove('is-visible');
+  }
+}
+
+function chooseLogoStyle() {
+  let $logoKH = document.querySelector('.logo__selection--kh');
+  let $logoKapHardie = document.querySelector('.logo__selection--KapHardie');
+  let selectedElement = document.querySelector('.logos.is-selected');
+  if (selectedElement.classList.contains('logos--hk')) {
+    $logoKH.classList.add('is-visible');
+    $logoKapHardie.classList.remove('is-visible');
+  } else {
+    $logoKH.classList.remove('is-visible');
+    $logoKapHardie.classList.add('is-visible');
   }
 }
 
