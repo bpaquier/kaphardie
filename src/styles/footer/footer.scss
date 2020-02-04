@@ -182,7 +182,7 @@ footer {
   }
 
   .footer__services div {
-    width: 84%;
+    width: 100%;
     text-align: center;
   }
 
@@ -272,28 +272,30 @@ footer {
     font-family: $text-font-family;
     font-size: 12px;
     font-weight: lighter;
+    line-height: 130%;
   }
 
   .bottom__charte {
     font-family: $text-font-family;
     font-size: 12px;
     font-weight: lighter;
+    line-height: 130%;
   }
 
   .bottom__contact {
     font-family: $text-font-family;
     font-size: 12px;
     font-weight: lighter;
+    line-height: 130%;
   }
 
   .bottom__reseaux {
     font-family: $text-font-family;
     font-size: 12px;
-    font-weight: lighter;
   }
 
   .elements__logos--facebook {
-    width: 2px;
+    width: 23px;
     height: auto;
   }
 

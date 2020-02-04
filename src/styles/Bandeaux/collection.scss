@@ -3,16 +3,44 @@
   width: 100%;
   max-width: 379px;
   height: 353px;
+  margin: 64px 0px;
+  @media (min-width: 768px) {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .collections__info {
   position: relative;
   width: 100%;
   height: 100%;
+  @media (min-width: 768px) {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 150px;
+    margin-left: 6.8%;
+  }
+  @media (min-width: 1200px) {
+    height: 200px;
+  }
 
   .info__title {
     text-align: center;
     font-size: 20px;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+    @media (min-width: 1200px) {
+      font-size: 45px;
+    }
   }
 
   .info__subtitle {
@@ -23,6 +51,11 @@
     z-index: 1;
     width: 150px;
     font-size: 12px;
+
+    @media (min-width: 768px) {
+      color: $secondary-color;
+      position: static;
+    }
   }
 
   .info__cta {
@@ -30,17 +63,33 @@
     bottom: 16px;
     right: 12px;
     padding: 4px 24px;
+    @media (min-width: 768px) {
+      position: static;
+      width: 50%;
+      height: 20%;
+      max-width: 180px;
+      background-color: $orange-color;
+      color: $primary-background-color;
+    }
   }
 }
 
 .collections__image {
   width: 100%;
+  max-width: 434px;
   height: 254px;
   position: absolute;
   top: 38px;
-  background-image: url("/assets/landing/CollectionBackgroundimage.png");
+  background-image: url('/assets/landing/CollectionBackgroundimage.png');
   background-position: top;
   background-position-x: left;
-}
-@media (min-width: 768px) {
+  background-repeat: no-repeat;
+  @media (min-width: 768px) {
+    position: static;
+  }
+  @media (min-width: 880px) {
+    background-size: 100%;
+    max-width: 680px;
+    height: 450px;
+  }
 }
