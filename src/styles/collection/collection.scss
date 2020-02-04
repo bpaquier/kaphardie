@@ -6,7 +6,23 @@
 }
 .collection__title {
   text-align: center;
-  padding-bottom: 24px;
+  padding: 20px;
+  h1{
+    font-family: Signika;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 50px;
+    color: $primary-font-color;
+  }
+  h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color:$secondary-font-color;
+  }
 }
 
 .collection__grid {
@@ -108,21 +124,44 @@
   padding: 10px;
   background-color: $secondary-color-opacity-30;
   cursor: pointer;
+  font-family: Signika;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: capitalize;
+  color: $primary-font-color;
 }
 .price.cap__price {
   font-size: 18px;
 }
 .cap__title {
-  font-size: 16px;
-  font-weight: bold;
+  font-family: Signika;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  color: $primary-font-color;
 }
 .title__size {
-  font-size: 14px;
-  font-weight: bold;
+  font-family: Signika;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  color: $primary-font-color;
 }
 .guid__size {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
   font-size: 12px;
-  text-decoration: underline;
+  line-height: 13px;
+  text-decoration-line: underline;
+  color: $primary-font-color;
   cursor: pointer;
 }
 
@@ -130,11 +169,14 @@
   padding: 12px 40px;
   border: none;
   border-radius: 3px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .size--active {
   background-color: $secondary-color;
 }
 .quantity__choice--up {
-  top: -109px;
+  top: -110px;
 }
