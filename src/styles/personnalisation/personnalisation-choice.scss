@@ -54,7 +54,7 @@
     }
 
     &.is-selected {
-      border: 2px solid $secondary-color;
+      border: 3px solid $secondary-color;
     }
 
     &:last-child {
@@ -99,6 +99,7 @@
 .logos {
   margin-right: 32px;
   padding: 8px;
+  padding-bottom: 0;
 
   &:hover {
     cursor: pointer;
@@ -109,10 +110,36 @@
   }
 
   &.is-selected {
-    border: 2px solid $secondary-color;
+    border-bottom: 3px solid $secondary-color;
   }
 
   .logo-sample {
     font-size: 24px;
+  }
+}
+
+.samples__logo {
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .samples__logo--Style {
+    color: $orange-color;
+    display: flex;
+    align-items: center;
+  }
+
+  .samples__logo--Color {
+    margin-top: 8px;
+    padding: 8px;
+    display: flex;
+
+    @media (min-width: 900px) {
+      margin: 0;
+    }
   }
 }
