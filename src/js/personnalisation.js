@@ -13,6 +13,7 @@ function selectProduct(product) {
       chooseVisiere();
       chooseBouton();
       chooseLogoStyle();
+      chooseLogoColor();
     });
   });
 }
@@ -165,9 +166,34 @@ function chooseLogoStyle() {
   }
 }
 
+function chooseLogoColor() {
+  let selectedElement = document.querySelector(
+    '.sample__logoColor.is-selected'
+  );
+  let $logos = document.querySelectorAll('.logo__selection svg');
+  let $logosStyle = document.querySelector('.samples__logo--Style');
+  if (selectedElement.classList.contains('sample--orange')) {
+    $logos.forEach(logo => {
+      logo.style.fill = '#ea7307';
+    });
+    $logosStyle.style.color = '#ea7307';
+  } else if (selectedElement.classList.contains('sample--noir')) {
+    $logos.forEach(logo => {
+      logo.style.fill = 'black';
+    });
+    $logosStyle.style.color = 'black';
+  } else {
+    $logos.forEach(logo => {
+      logo.style.fill = '#6d071a';
+    });
+    $logosStyle.style.color = '#6d071a';
+  }
+}
+
 selectProduct('sample--visiere');
 selectProduct('sample--tissu');
 selectProduct('sample__bouton');
+selectProduct('sample__logoColor');
 selectProduct('logos');
 selectProduct('view-picture');
 chooseQuantity();
