@@ -61,7 +61,7 @@
     height: 360px;
   }
 
-  p {
+  .wish-list__adder {
     z-index: 1;
     position: absolute;
     top: 0;
@@ -110,6 +110,7 @@
   }
 
   .logo__selection--kh {
+    position: absolute;
     top: 90px;
     left: 142px;
 
@@ -132,8 +133,8 @@
 
   .logo__selection--KapHardie {
     position: absolute;
-    top: 90px;
-    left: 125px;
+    top: 23px;
+    left: 120px;
 
     @media (min-width: 1100px) {
       top: 160px;
