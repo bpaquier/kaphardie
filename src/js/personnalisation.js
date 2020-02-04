@@ -115,12 +115,15 @@ function chooseTissu() {
 }
 
 function chooseVisiere() {
-  let $visiere = document.querySelector('.visiere-picture--face');
+  let $visiereFace = document.querySelector('.visiere-picture--face');
+  let $visiereSide = document.querySelector('.visiere-picture--side');
   let selectedElement = document.querySelector('.sample--visiere.is-selected');
   if (selectedElement.classList.contains('sample--pinatex')) {
-    $visiere.classList.add('is-visible');
+    $visiereFace.classList.add('is-visible');
+    $visiereSide.classList.add('is-visible');
   } else {
-    $visiere.classList.remove('is-visible');
+    $visiereFace.classList.remove('is-visible');
+    $visiereSide.classList.remove('is-visible');
   }
 }
 
