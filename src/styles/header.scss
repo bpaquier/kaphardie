@@ -1,0 +1,261 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      142.38deg,
+      #0c0c0c 6.07%,
+      rgba(46, 44, 44, 0) 58.5%
+    ),
+    url(/assets/landing/Header/landingPageBackground.gif);
+  background-size: auto 100vh;
+  background-position: 98%;
+  background-repeat: no-repeat;
+}
+
+.header__nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  padding: 0 20px;
+}
+
+.header__logoMobilKH {
+  width: 40px;
+  height: 40px;
+}
+
+.header__logoKH {
+  display: none;
+}
+
+.header__links {
+  display: none;
+}
+
+.header__iconsContainer {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .header__icon {
+    width: 20px;
+    height: 20px;
+    fill: $primary-background-color;
+    margin-left: 8%;
+  }
+}
+
+.header__content {
+  position: absolute;
+  top: 15%;
+  left: 6.25%;
+}
+
+.header__title {
+  width: 90%;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $primary-background-color;
+  margin-bottom: 24px;
+}
+
+.header__subtitle {
+  width: 90%;
+  font-size: 12px;
+  color: $primary-background-color;
+  margin-bottom: 24px;
+}
+
+.cta {
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-size: 12px;
+
+  &:hover {
+    background-color: $orange-color;
+    border: 2px solid $primary-background-color;
+    color: $primary-background-color;
+  }
+}
+
+//MENU BURGER
+
+@mixin iconBurger {
+  width: 40px;
+  height: 5px;
+  background-color: $tertiary-color;
+  border-radius: 10px;
+}
+
+.header__menu {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 3;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__iconBurger {
+  @include iconBurger;
+  transition: background-color 0.3s;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    @include iconBurger;
+    transition: transform 0.3s;
+  }
+
+  &::before {
+    transform: translateY(-12px);
+  }
+
+  &::after {
+    transform: translateY(6px);
+  }
+}
+
+.header__iconBurger.is-open {
+  background-color: transparent;
+
+  &::before {
+    transform: translateY(3px) rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+}
+
+.header__menuContent {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  border-right: 25px solid $secondary-color;
+  left: -150vw;
+  transition: left 0.5s;
+
+  &.is-open {
+    left: 0px;
+  }
+}
+
+.header__menuItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: $primary-background-color;
+}
+
+.header__menuItem {
+  width: 100px;
+  overflow: visible;
+  font-family: $title-font-family;
+  font-size: 20px;
+  text-transform: capitalize;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $tertiary-color;
+  }
+}
+
+// RESPONSIVE 768PX
+
+@media (min-width: 768px) {
+  .header__nav {
+    background-color: $primary-background-color;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .header__logoMobilKH {
+    display: none;
+  }
+
+  .header__logoKH {
+    display: block;
+    color: $orange-color;
+    font-family: 'Baumans';
+    font-size: 28px;
+    padding-left: 20px;
+  }
+
+  .header__links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-family: $title-font-family;
+    font-size: 16px;
+    color: $primary-font-color;
+    text-transform: capitalize;
+
+    li {
+      padding-bottom: 2px 0;
+      transition: border-bottom 0.2s;
+    }
+
+    li:hover {
+      border-bottom: 1px solid $secondary-color;
+      cursor: pointer;
+    }
+  }
+
+  .header__iconsContainer {
+    max-width: 20%;
+    background-color: $secondary-color;
+    height: 50px;
+    justify-content: space-around;
+  }
+
+  .header__content {
+    top: 20%;
+  }
+
+  .header__title {
+    width: 90%;
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .header__subtitle {
+    width: 60%;
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+
+  .cta {
+    display: block;
+    padding: 14px 30px;
+
+    &:hover {
+      background-color: $orange-color;
+      border: 2px solid $primary-background-color;
+      color: $primary-background-color;
+    }
+  }
+
+  .header__menu,
+  .header__menuContent {
+    display: none;
+  }
+}

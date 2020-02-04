@@ -1,6 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $text-font-family, sans-serif;
   color: $primary-font-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1366px;
 }
 
 main {
@@ -10,14 +25,15 @@ main {
   align-items: center;
 }
 h1 {
-  font-family: $title-font-familiy, sans-serif;
+  font-family: $title-font-family, sans-serif;
   color: $primary-font-color;
   font-size: 45px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-family: $title-font-familiy, sans-serif;
-  color: $secondary-color;
+  font-family: $text-font-family, sans-serif;
+  color: $secondary-font-color;
   font-size: 18px;
 }
 
@@ -54,7 +70,6 @@ button {
 .logo {
   font-family: "Baumans";
   font-size: 32px;
-  text-transform: uppercase;
 }
 
 .logo--header {
