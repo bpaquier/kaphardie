@@ -70,8 +70,7 @@
     top: 36px;
   }
   p {
-    height: 20px;
-    padding: 8px 0px;
+    padding: 4px 0px;
     padding-left: 20%;
 
     &:hover {
@@ -141,11 +140,11 @@
     display: none;
     justify-content: space-between;
     position: absolute;
-    width: 120%;
-    height: 48px;
+    width: 125%;
+    height: 56px;
     padding: 8px;
     background-color: $primary-background-color;
-    top: 38px;
+    top: 42px;
     left: -12%;
 
     &.is-visible {
@@ -156,7 +155,6 @@
       background-color: $secondary-color-opacity-30;
       padding-top: 15px;
       width: 30%;
-      height: 30px;
 
       &:hover {
         cursor: pointer;

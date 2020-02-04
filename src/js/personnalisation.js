@@ -112,6 +112,9 @@ function chooseTissu() {
       prevPictureSide.classList.remove('is-visible');
       picturesSide[i].classList.add('is-visible');
       prevPictureSide = picturesSide[i];
+      document.querySelector('.choice__title--tissu').innerHTML = colors[
+        i
+      ].getAttribute('value');
     }
   }
 }
@@ -120,6 +123,9 @@ function chooseVisiere() {
   let $visiereFace = document.querySelector('.visiere-picture--face');
   let $visiereSide = document.querySelector('.visiere-picture--side');
   let selectedElement = document.querySelector('.sample--visiere.is-selected');
+  document.querySelector(
+    '.choice__title--visiere'
+  ).innerHTML = selectedElement.getAttribute('value');
   if (selectedElement.classList.contains('sample--pinatex')) {
     $visiereFace.classList.add('is-visible');
     $visiereSide.classList.add('is-visible');
@@ -135,6 +141,9 @@ function chooseBouton() {
   let boutonNoirSide = document.querySelector('.bouton__side--noir');
   let boutonBordeauxSide = document.querySelector('.bouton__side--bordeaux');
   let selectedElement = document.querySelector('.sample__bouton.is-selected');
+  document.querySelector(
+    '.choice__title--color'
+  ).innerHTML = selectedElement.getAttribute('value');
   if (selectedElement.classList.contains('sample--bordeaux')) {
     boutonBordeauxFace.classList.add('is-visible');
     boutonNoirFace.classList.remove('is-visible');
