@@ -1,6 +1,7 @@
 # Kap Hardie
 
- <ul>projet fin de semestre :
+ Projet fin de semestre :
+ <ul>
   <li>Bastien Paquier</li>
   <li>Constance Pétillot</li>
   <li>Lucas Roche</li>
