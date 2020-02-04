@@ -12,6 +12,7 @@ function selectProduct(product) {
       chooseTissu();
       chooseVisiere();
       chooseBouton();
+      chooseLogoStyle();
     });
   });
 }
@@ -148,6 +149,19 @@ function chooseBouton() {
     boutonBordeauxFace.classList.remove('is-visible');
     boutonNoirSide.classList.remove('is-visible');
     boutonBordeauxSide.classList.remove('is-visible');
+  }
+}
+
+function chooseLogoStyle() {
+  let $logoKH = document.querySelector('.logo__selection--kh');
+  let $logoKapHardie = document.querySelector('.logo__selection--KapHardie');
+  let selectedElement = document.querySelector('.logos.is-selected');
+  if (selectedElement.classList.contains('logos--hk')) {
+    $logoKH.classList.add('is-visible');
+    $logoKapHardie.classList.remove('is-visible');
+  } else {
+    $logoKH.classList.remove('is-visible');
+    $logoKapHardie.classList.add('is-visible');
   }
 }
 
