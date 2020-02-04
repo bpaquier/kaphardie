@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  
+  max-width: 1180px;
 }
 .collection__title {
   text-align: center;
@@ -15,7 +14,6 @@
   display: grid;
   grid-template-columns: minmax(380px, 500px);
   grid-template-rows: repeat(12, 250px);
-  margin: 0px 60px 0px 60px;
   gap: 8px;
 
   .collection__cap {
@@ -29,18 +27,19 @@
     .collection__icon {
       width: 25px;
       position: relative;
-      left: 85%;
-      top: -275px;
+      left: 80%;
+      top: -285px;
     }
     .collection__button {
       display: block;
+      font-family: "signika";
+      font-size: 14px;
       border-radius: 5px;
-      width: 80px;
-      height: 27px;
       position: relative;
-      padding: 4px 24px;
+      padding: 10px 32px;
       color: $orange-color;
-      left: 73%;
+      left: 55%;
+      top: -20px;
     }
     .collection__button:hover {
       background-color: $orange-color;
@@ -66,6 +65,7 @@
     .collection__cap:hover {
       background-color: $primary-background-color;
       transform: scale(1.1);
+      z-index: 2;
       .collection__speedbuy--desktop {
         display: flex;
       }
@@ -78,19 +78,12 @@
     }
     .collection__icon {
       top: -250px !important;
+      left: 85% !important;
     }
   }
   @media (min-width: 1050px) {
     grid-template-columns: repeat(3, minmax(350px, 500px));
     grid-template-rows: repeat(4, 250px);
-  }
-  @media (min-width: 1400px) {
-    grid-template-columns: repeat(4, minmax(350px, 500px));
-    grid-template-rows: repeat(3, 250px);
-  }
-  @media (min-width: 1750px) {
-    grid-template-columns: repeat(5, minmax(350px, 500px));
-    grid-template-rows: repeat(2, 250px);
   }
 }
 .collection__speedbuy {
@@ -130,18 +123,18 @@
 .guid__size {
   font-size: 12px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .collection__addcta {
-  padding: 4px 24px;
-  height: 24px;
+  padding: 12px 40px;
   border: none;
   border-radius: 3px;
 }
 
-.size--active{
-  background-color:$secondary-color;
-} 
-.quantity__choice--up{
-  top: -180px;
+.size--active {
+  background-color: $secondary-color;
+}
+.quantity__choice--up {
+  top: -109px;
 }

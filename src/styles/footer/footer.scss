@@ -5,6 +5,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1366px;
 }
 
 .services {
@@ -56,6 +57,13 @@ footer {
   font-weight: bold;
 }
 
+.elements__email--register {
+  border: none;
+  font-family: $text-font-family;
+  font-size: 12px;
+  padding: 5px;
+}
+
 .elements__email {
   margin-top: 20px;
   display: flex;
@@ -105,15 +113,14 @@ footer {
   justify-content: space-between;
 }
 
-.elements__search {
-  background-color: #fbfbfb;
-  color: #b4b4bc;
-  margin-top: 40px;
-  padding: 5px;
-}
 .elements__search input {
   width: 100%;
   text-align: center;
+  border: none;
+  background-color: $primary-background-color;
+  color: $tertiary-color;
+  margin-top: 40px;
+  padding: 5px;
 }
 
 .elements__logo {
