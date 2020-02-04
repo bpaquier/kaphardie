@@ -1,10 +1,12 @@
-@import 'vendors/reset.scss';
-
+@import "vendors/reset.scss";
 @import 'global/fonts.scss';
 @import 'global/variables.scss';
 @import 'global/global-settings.scss';
+
+@import "header.scss";
 @import 'personnalisation/personnalisation-illustration.scss';
 @import 'personnalisation/personnalisation-choice.scss';
 @import 'personnalisation/personnalisation-buySection.scss';
 @import 'footer/footer.scss';
 @import 'collection/collection.scss';
+
