@@ -3,12 +3,26 @@
   width: 100%;
   max-width: 379px;
   height: 353px;
+  margin-top: 48px;
+  @media (min-width: 768px) {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+  }
 }
 
 .collections__info {
   position: relative;
   width: 100%;
   height: 100%;
+  @media (min-width: 768px) {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 
   .info__title {
     text-align: center;
@@ -23,6 +37,11 @@
     z-index: 1;
     width: 150px;
     font-size: 12px;
+
+    @media (min-width: 768px) {
+      position: static;
+      color: black;
+    }
   }
 
   .info__cta {
@@ -30,6 +49,9 @@
     bottom: 16px;
     right: 12px;
     padding: 4px 24px;
+    @media (min-width: 768px) {
+      position: static;
+    }
   }
 }
 
@@ -41,6 +63,10 @@
   background-image: url("/assets/landing/CollectionBackgroundimage.png");
   background-position: top;
   background-position-x: left;
-}
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
+    width: 660px;
+    position: static;
+    background-size: 100%;
+    height: 520px;
+  }
 }
