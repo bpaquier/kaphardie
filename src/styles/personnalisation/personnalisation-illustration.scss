@@ -1,0 +1,282 @@
+.personnalisation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personnalisation__title {
+  font-size: 20px;
+  text-align: center;
+
+  @media (min-width: 1100px) {
+    font-size: 45px;
+  }
+}
+
+.personnalisation__content {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 1180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: 1100px) {
+    margin-top: 46px;
+    align-items: flex-start;
+  }
+}
+
+.personnalisation__illustration {
+  padding: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 580px;
+  height: 295px;
+
+  @media (min-width: 1100px) {
+    height: 590px;
+  }
+}
+
+.illustration__main-pictures {
+  margin-top: 20px;
+  position: relative;
+  width: 190px;
+  height: 180px;
+
+  @media (min-width: 1100px) {
+    margin-top: 30px;
+    width: 360px;
+    height: 360px;
+  }
+
+  p {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    svg {
+      width: 18px;
+      height: 18px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.main__pictures {
+  display: none;
+}
+
+.main__pictures.is-visible {
+  display: block;
+}
+
+.main__pictures--face {
+  .picture__face {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+    &.is-visible {
+      display: block;
+    }
+  }
+  .bouton__face {
+    position: absolute;
+    width: 15px;
+    display: none;
+
+    &.is-visible {
+      display: block;
+    }
+    @media (min-width: 1100px) {
+      width: 27px;
+    }
+  }
+
+  .picture__face.picture--1 {
+    left: 1px;
+    width: 102%;
+    @media (min-width: 1100px) {
+      width: 103%;
+      left: -8px;
+    }
+  }
+
+  .picture__face.picture--1.is-visible ~ .bouton__face {
+    left: 90px;
+    top: 11.6px;
+    @media (min-width: 1100px) {
+      left: 163px;
+      top: 25px;
+    }
+  }
+
+  .picture__face.picture--2 {
+    width: 105%;
+    top: 1px;
+    @media (min-width: 1100px) {
+      left: -10px;
+    }
+  }
+
+  .picture__face.picture--2.is-visible ~ .bouton__face {
+    left: 92px;
+    top: 14.2px;
+    @media (min-width: 1100px) {
+      left: 164px;
+      top: 29.5px;
+    }
+  }
+
+  .picture__face.picture--3 {
+    width: 102%;
+    left: 2px;
+    @media (min-width: 1100px) {
+      top: -2px;
+      left: -5px;
+    }
+  }
+
+  .picture__face.picture--3.is-visible ~ .bouton__face {
+    left: 92px;
+    top: 12.2px;
+    @media (min-width: 1100px) {
+      width: 29px;
+      left: 164px;
+      top: 22.5px;
+    }
+  }
+
+  .picture__face.picture--4 {
+    width: 105%;
+    top: 1px;
+    @media (min-width: 1100px) {
+      left: -10px;
+      top: 1px;
+    }
+  }
+
+  .picture__face.picture--4.is-visible ~ .bouton__face {
+    left: 91px;
+    top: 14.8px;
+    @media (min-width: 1100px) {
+      width: 29px;
+      left: 164px;
+      top: 29.5px;
+    }
+  }
+
+  .picture__face.picture--5 {
+    width: 105%;
+    left: 1px;
+    top: 2px;
+    @media (min-width: 1100px) {
+      left: -5px;
+      top: 3px;
+    }
+  }
+
+  .picture__face.picture--5.is-visible ~ .bouton__face {
+    left: 91px;
+    top: 13.2px;
+    @media (min-width: 1100px) {
+      left: 166px;
+      top: 27.5px;
+    }
+  }
+
+  .visiere-picture--face {
+    display: none;
+    position: absolute;
+    width: 105%;
+    top: 3px;
+
+    &.is-visible {
+      display: block;
+    }
+
+    @media (min-width: 1100px) {
+      width: 100%;
+      top: 23px;
+      transform: scale(1.06);
+    }
+  }
+}
+
+.main__pictures--side {
+  .picture__side {
+    display: none;
+    position: absolute;
+    width: 130%;
+    height: 70%;
+    top: 30px;
+    left: -20px;
+
+    &.is-visible {
+      display: block;
+    }
+  }
+}
+
+.illustration__views-pictures {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+
+  .view-picture {
+    display: flex;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .view-picture--front {
+    width: 79px;
+    height: 65px;
+
+    &.is-selected {
+      border-bottom: $orange-color 2px solid;
+    }
+
+    img {
+      margin: auto;
+      width: 63px;
+      height: 49px;
+    }
+  }
+
+  .view-picture--profil {
+    width: 102px;
+    height: 65px;
+
+    &.is-selected {
+      border-bottom: $orange-color 2px solid;
+    }
+
+    img {
+      margin: auto;
+      width: 94px;
+      height: 49px;
+    }
+  }
+}

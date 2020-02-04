@@ -1,0 +1,202 @@
+footer {
+  background: $secondary-color;
+  color: $primary-background-color;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 135px 135px;
+  grid-template-rows: 90px 90px;
+  justify-content: center;
+  padding: 30px;
+  font-family: $title-font-family;
+  font-size: 12px;
+  text-align: center;
+}
+
+.services__paiement--logo {
+  text-align: center;
+  width: 20px;
+  height: auto;
+  margin: 10px;
+  margin-right: 10px;
+}
+
+.services__retour--logo {
+  text-align: center;
+  width: 30px;
+  height: auto;
+  margin: 10px;
+}
+
+.services__livraison--logo {
+  text-align: center;
+  width: 30px;
+  height: auto;
+  margin: 10px;
+}
+
+.services__serviceClient--logo {
+  text-align: center;
+  width: 30px;
+  height: auto;
+  margin: 10px;
+}
+.footer__bottom {
+  border-top: #b4b4bc solid 1px;
+}
+
+.elements__newsletter {
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.elements__email {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 8px;
+}
+
+.elements__email--enterEmail {
+  font-size: 12px;
+  width: 180px;
+  border-bottom: #fbfbfb solid 1px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.elements__email--register {
+  background-color: #fbfbfb;
+  color: #8eafac;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.elements__contact {
+  border-bottom: #fbfbfb solid 1px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.elements__company {
+  border-bottom: #fbfbfb solid 1px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.elements__language {
+  border-bottom: #fbfbfb solid 1px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.elements__search {
+  background-color: #fbfbfb;
+  color: #b4b4bc;
+  margin-top: 40px;
+  padding: 5px;
+}
+.elements__search input {
+  width: 100%;
+  text-align: center;
+}
+
+.elements__logo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.elements__logo--kapHardie {
+  font-family: $title-font-family;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.elements__logos--facebook {
+  padding: 5px;
+}
+
+.elements__logos--instagram {
+  padding: 5px;
+}
+
+.elements__logos--twitter {
+  padding: 5px;
+}
+
+.elements__project {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer__desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .services {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .services li {
+    margin: 5px;
+  }
+
+  .footer__bottom {
+    display: none;
+  }
+
+  .footer__desktop {
+    display: block;
+  }
+
+  .middle {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 65px;
+    margin-left: 65px;
+    margin-top: 50px;
+    border-top: #b4b4bc solid 1px;
+    padding-top: 40px;
+  }
+
+  .middle__reseaux {
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 30px 30px;
+    grid-template-areas:
+      "middle__reseaux--texte middle__reseaux--texte middle__reseaux--texte"
+      "middle__reseaux--facebook middle__reseaux--instagram middle__reseaux--twitter";
+  }
+
+  .elements__search {
+    background-color: #fbfbfb;
+    color: #b4b4bc;
+    margin-top: 40px;
+    padding: 5px;
+  }
+  .elements__search input {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1100) {
+  .middle {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
