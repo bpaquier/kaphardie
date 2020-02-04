@@ -13,6 +13,7 @@ function selectProduct(product) {
       chooseVisiere();
       chooseBouton();
       chooseLogoStyle();
+      chooseLogoColor();
     });
   });
 }
@@ -111,6 +112,9 @@ function chooseTissu() {
       prevPictureSide.classList.remove('is-visible');
       picturesSide[i].classList.add('is-visible');
       prevPictureSide = picturesSide[i];
+      document.querySelector('.choice__title--tissu').innerHTML = colors[
+        i
+      ].getAttribute('value');
     }
   }
 }
@@ -119,6 +123,9 @@ function chooseVisiere() {
   let $visiereFace = document.querySelector('.visiere-picture--face');
   let $visiereSide = document.querySelector('.visiere-picture--side');
   let selectedElement = document.querySelector('.sample--visiere.is-selected');
+  document.querySelector(
+    '.choice__title--visiere'
+  ).innerHTML = selectedElement.getAttribute('value');
   if (selectedElement.classList.contains('sample--pinatex')) {
     $visiereFace.classList.add('is-visible');
     $visiereSide.classList.add('is-visible');
@@ -134,6 +141,9 @@ function chooseBouton() {
   let boutonNoirSide = document.querySelector('.bouton__side--noir');
   let boutonBordeauxSide = document.querySelector('.bouton__side--bordeaux');
   let selectedElement = document.querySelector('.sample__bouton.is-selected');
+  document.querySelector(
+    '.choice__title--color'
+  ).innerHTML = selectedElement.getAttribute('value');
   if (selectedElement.classList.contains('sample--bordeaux')) {
     boutonBordeauxFace.classList.add('is-visible');
     boutonNoirFace.classList.remove('is-visible');
@@ -165,9 +175,34 @@ function chooseLogoStyle() {
   }
 }
 
+function chooseLogoColor() {
+  let selectedElement = document.querySelector(
+    '.sample__logoColor.is-selected'
+  );
+  let $logos = document.querySelectorAll('.logo__selection svg');
+  let $logosStyle = document.querySelector('.samples__logo--Style');
+  if (selectedElement.classList.contains('sample--orange')) {
+    $logos.forEach(logo => {
+      logo.style.fill = '#ea7307';
+    });
+    $logosStyle.style.color = '#ea7307';
+  } else if (selectedElement.classList.contains('sample--noir')) {
+    $logos.forEach(logo => {
+      logo.style.fill = 'black';
+    });
+    $logosStyle.style.color = 'black';
+  } else {
+    $logos.forEach(logo => {
+      logo.style.fill = '#6d071a';
+    });
+    $logosStyle.style.color = '#6d071a';
+  }
+}
+
 selectProduct('sample--visiere');
 selectProduct('sample--tissu');
 selectProduct('sample__bouton');
+selectProduct('sample__logoColor');
 selectProduct('logos');
 selectProduct('view-picture');
 chooseQuantity();

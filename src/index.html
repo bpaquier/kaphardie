@@ -291,23 +291,40 @@
                   <use href='#icon-KapHardhie'></use>
                 </svg></p>
             </div>
-            <div class="main__pictures main__pictures--side">
-              <img class="picture__side picture--1 is-visible"
-                src="assets/casquettes/Casquette_côté_Barkcloth_liège_orange.png" alt="casquette personnalisée" />
-              <img class="picture__side picture--2" src="assets/casquettes/Casquette_côté_Wax_liège_orange.png"
-                alt="casquette personnalisée" />
-              <img class="picture__side picture--3" src="assets/casquettes/Casquette_côté_Batik_liège_orange.png"
-                alt="casquette personnalisée" />
-              <img class="picture__side picture--4" src="assets/casquettes/Casquette_côté_Lin_liege_orange.png"
-                alt="casquette personnalisée" />
-              <img class="picture__side picture--5" src="assets/casquettes/Casquette__Côté_Jute_liège_orange.png"
-                alt="casquette personnalisée" />
-              <img class="visiere-picture--side" src="assets/casquettes/Visière_cuir_côté.png"
-                alt='visiere en pinatex' />
-              <img class="bouton__side bouton__side--bordeaux" src="assets/casquettes/bouton-bordeaux-cote.png"
-                alt="bouton bordeaux">
-              <img class="bouton__side bouton__side--noir" src="assets/casquettes/bouton-noir-cote.png"
-                alt="bouton noir">
+          <div class="main__pictures main__pictures--side">
+            <img
+            class="picture__side picture--1 is-visible"
+            src="assets/casquettes/Casquette_côté_Barkcloth_liège_orange.png"
+            alt="casquette personnalisée"
+            /> 
+            <img
+            class="picture__side picture--2"
+            src="assets/casquettes/Casquette_côté_Wax_liège_orange.png"
+            alt="casquette personnalisée"
+            />
+            <img
+            class="picture__side picture--3"
+            src="assets/casquettes/Casquette_côté_Batik_liège_orange.png"
+            alt="casquette personnalisée"
+            />
+            <img
+            class="picture__side picture--4"
+            src="assets/casquettes/Casquette_côté_Lin_liege_orange.png"
+            alt="casquette personnalisée"
+            />
+            <img
+            class="picture__side picture--5"
+            src="assets/casquettes/Casquette__Côté_Jute_liège_orange.png"
+            alt="casquette personnalisée"
+            />
+            <img class="visiere-picture--side" src="assets/casquettes/Visière_cuir_côté.png" alt='visiere en pinatex'/>
+            <img class="bouton__side bouton__side--bordeaux" src="assets/casquettes/bouton-bordeaux-cote.png" alt="bouton bordeaux">
+            <img class="bouton__side bouton__side--noir" src="assets/casquettes/bouton-noir-cote.png" alt="bouton noir"> 
+          </div>
+          </div>
+          <div class="illustration__views-pictures ">
+            <div class="view-picture view-picture--front is-selected">
+              <img src="/assets/landing/personnalisation/imageFrontView.png" alt="casquette vue de devant" />
             </div>
             <div class="illustration__views-pictures ">
               <div class="view-picture view-picture--front is-selected">
@@ -320,9 +337,9 @@
         </article>
         <article class="personnalisation__choice">
           <div class="choice choice__tissu">
-            <h1 class="choice__title"><span>tissu : </span> batik</h1>
+            <h1 class="choice__title"><span class="choice__title--type">tissu : </span><span class="choice__title--tissu"> barkcloth</span></h1>
             <div class="choice__tissu__tissus samples">
-              <div class="sample sample--tissu sample--barkCloth is-selected" value="bark cloth"></div>
+              <div class="sample sample--tissu sample--barkCloth is-selected" value="barkcloth"></div>
               <div class="sample sample--tissu sample--wax" value="wax"></div>
               <div class="sample sample--tissu sample--batik" value="batik"></div>
               <div class="sample sample--tissu sample--lin" value="lin"></div>
@@ -330,14 +347,14 @@
             </div>
           </div>
           <div class="choice choice__visiere">
-            <h1 class="choice__title"><span>visiere : </span>liège</h1>
+            <h1 class="choice__title"><span class="choice__title--type">visiere : </span><span class="choice__title--visiere">liège</span></h1>
             <div class="choice__visiere__visieres samples">
               <div class="sample sample--visiere sample--liege is-selected" value="liege"></div>
               <div class="sample sample--visiere sample--pinatex" value="pinatex"></div>
             </div>
           </div>
           <div class="choice choice__bouton">
-            <h1 class="choice__title"><span>bouton : </span>orange</h1>
+            <h1 class="choice__title"><span class="choice__title--type">bouton : </span><span class='choice__title--color'> orange</span></h1>
             <div class="choice__bouton__boutons samples">
               <div class="sample sample__bouton sample--orange is-selected" value="orange"></div>
               <div class="sample sample__bouton sample--bordeaux " value="bordeaux"></div>
@@ -345,11 +362,21 @@
             </div>
           </div>
           <div class="choice choice__logo">
-            <h1 class="choice__title"><span>logo </span></h1>
-            <div class="choice__logo__logos samples">
-              <div class="logos logos--hk is-selected"><span class="logo logo-sample">HK</span></div>
-              <div class="logos logos--kaphardie">
-                <span class="logo logo-sample">kap hardie</span>
+            <h1 class="choice__title"><span class="choice__title--type">logo </span></h1>
+            <div class="samples samples__logo">
+              <div class= 'samples__logo--Style'>
+                <div class="logos logos--hk is-selected"><span class="logo logo-sample">KH</span></div>
+                <div class="logos logos--kaphardie">
+                  <span class="logo logo-sample">Kap Hardie</span>
+                </div>
+              </div>
+              <div class="samples__logo--Color ">
+                <div
+                  class="sample sample__logoColor sample--orange is-selected"
+                  value="orange"
+                ></div>
+                <div class="sample sample__logoColor sample--bordeaux " value="bordeaux"></div>
+                <div class="sample sample__logoColor sample--noir" value="noir"></div>
               </div>
             </div>
           </div>
@@ -417,47 +444,92 @@
             </div>
           </div>
         </article>
-      </div>
-    </section>
-    <button class="cta--dark"><a href="collection.html">VOIR LE TRAVAIL DE NATHAN QUE CEST BEAU</a></button>
-  </main>
-  <footer class="footer">
-    <section class="footer__services">
-      <ul class="footer__services services">
-        <li class="services__paiement">
-          <img class="services__paiement--logo" alt="logo cadena" src="assets/footer/preFooter/logoLock.svg" />
-          <p class="services__paiement--texte">
-            Paiement 100% sécurisé</p>
-        </li>
-        <li class="services__retour">
-          <img class="services__retour--logo" alt="logo retour gratuit"
-            src="assets/footer/preFooter/logoFreeReturn.svg" />
-          <p class="services__retour--texte"> Retour gratuit</p>
-        </li>
-        <li class="services__livraison">
-          <img class="services__livraison--logo" alt="logo livraison" src="assets/footer/preFooter/logoDelivery.svg" />
-          <p class="services__livraison--texte"> Livraison sous 24h</p>
-        </li>
-        <li class="services__serviceClient">
-          <img class="services__serviceClient--logo" alt="logo telephone"
-            src="assets/footer/preFooter/logoHotline.svg" />
-          <p class="services__serviceClient--texte">
-            Service client 7j/7</p>
-        </li>
-      </ul>
-    </section>
-    <section class="footer__bottom">
-      <ul class="footer__elements elements">
-        <li class="elements__newsletter">
-          Inscrivez-vous à notre newsletter
-        </li>
-        <li class="elements__email">
-          <div class="elements__email--enterEmail">Entrez votre email</div>
-          <button class="elements__email--register">S'INSCRIRE</button>
-        </li>
-        <li class="elements__contact">
-          <div class="elements__contact--texte">CONTACT</div>
-
+        </div>
+      </section>
+      <button class="cta--dark"><a href="collection.html">VOIR LE TRAVAIL DE NATHAN QUE CEST BEAU</a></button>
+      <section class="map">
+        <div class="map__element .map__element--france">
+          <div class="map__land">
+            <p class="map__svg--arrow">
+              <svg><use href="#icon-arrowLeft"></use></svg>
+            </p>
+            <p class="djjd">FRANCE</p>
+            <p class="map__svg--arrow">
+              <svg><use href="#icon-arrowRight"></use></svg>
+            </p>
+          </div>
+          <img class="land__france" src="/assets/landing/map/france.png" alt="CarteFrance">
+          <p class="land__matiere">Le Lin Bio</p>
+          <p class="land__organisation">LCBIO</p>
+          <p class="matiere__description">Habillez votre casquette aux couleurs locales.
+            Grâce au réseau de petits producteurs bio regroupés sous le cigle LCBio
+            (l’association Lin et Chanvre Bio), votre casquette est 100%
+            écoresponsable et locale.</p>
+          <div class="carousel__points">
+            <div class="carousel__point"></div>
+            <div class="carousel__point"></div>
+            <div class="carousel__point"></div>
+            <div class="carousel__point"></div>
+            <div class="carousel__point"></div>
+            <div class="carousel__point"></div>
+            <div class="carousel__point"></div>
+          </div>
+        </divca>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__services">
+        <div>
+        <ul class="footer__services services">
+          <li class="services__paiement">
+            <img
+              class="services__paiement--logo"
+              alt="logo cadena"
+              src="assets/footer/preFooter/logoLock.svg"
+            />
+            <p class="services__paiement--texte">
+              Paiement 100% sécurisé</p>
+          </li>
+          <li class="services__retour">
+            <img
+              class="services__retour--logo"
+              alt="logo retour gratuit"
+              src="assets/footer/preFooter/logoFreeReturn.svg"
+            />
+            <p class="services__retour--texte"> Retour gratuit</p>
+          </li>
+          <li class="services__livraison">
+            <img
+              class="services__livraison--logo"
+              alt="logo livraison"
+              src="assets/footer/preFooter/logoDelivery.svg"
+            />
+            <p class="services__livraison--texte"> Livraison sous 24h</p>
+          </li>
+          <li class="services__serviceClient">
+            <img
+              class="services__serviceClient--logo"
+              alt="logo telephone"
+              src="assets/footer/preFooter/logoHotline.svg"
+            />
+            <p class="services__serviceClient--texte">
+              Service client 7j/7</p
+            >
+          </li>
+        </ul>
+        </div>
+      </section>
+      <section class="footer__bottom">
+        <ul class="footer__elements elements">
+          <li class="elements__newsletter">
+            Inscrivez-vous à notre newsletter
+          </li>
+          <li class="elements__email">
+            <div class="elements__email--enterEmail">Entrez votre email</div>
+            <button class="elements__email--register">S'INSCRIRE</button>
+          </li>
+          <li class="elements__contact">
+            <div class="elements__contact--texte">CONTACT</div>
           <img class="elements__contact--plus" alt="image plus" src="assets/footer/add-fill.svg" />
         </li>
         <li class="elements__company">
@@ -467,71 +539,104 @@
         </li>
         <li class="elements__language">
           <div class="elements__language--texte">LANGUES</div>
-
-          <img class="elements__language--plus" alt="image plus" src="assets/footer/add-fill.svg" />
-        </li>
-        <li class="elements__search">
-          <input type="text" class="searchTerm" placeholder="Rechercher"></li>
-        <li class="elements__logo">
-          <div class="elements__logo--kapHardie">Kap Hardie</div>
-          <div class="elements__logo--logos">
-            <img class="elements__logos--facebook" alt="logo facebook" src="assets/footer/logoFacebook.svg" />
-            <img class="elements__logos--instagram" alt="logo instagram" src="assets/footer/logoInstagram.svg" />
-            <img class="elements__logos--twitter" alt="logo twitter" src="assets/footer/logoTwitter.svg" />
-          </div>
-        </li>
-        <li class="elements__project">
-          Ce site est issue d'un projet étudiant
-        </li>
-      </ul>
-    </section>
-    <section class="footer__desktop">
-      <ul class="footer__desktop middle">
-        <li class="middle__search">
-          <input type="text" class="middle__searche--searchTerm" placeholder="Rechercher"></li>
-
-        <li class="middle__newsletter">
-          Inscrivez-vous à notre newsletter
-        </li>
-        <li class="middle__email">
-          <div class="middle__email--enterEmail">Entrez votre email</div>
-          <button class="middle__email--button">S'INSCRIRE</button>
-          </il>
-      </ul>
-      <ul class="footer__desktop bottom">
-        <li class="bottom__logo">Kap Hardie</li>
-        <li class="bottom__adress">
-          <ul class="bottom__adress--elements">
-            <li>Kap Hardie</li>
-            <li>6 rue de l'adresse</li>
-            <li>75000 Paris</li>
-          </ul>
-        </li>
-        <li class="bottom__charte">
-          <ul class="bottom__charte--elements">
-            <li>FAQ</li>
-            <li>Mention légales</li>
-            <li>CGV</li>
-          </ul>
-        </li>
-        <li class="bottom__contact">
-          <ul class="bottom__contact--elements">
-            <li>Nous contacter</li>
-            <li>Recrutement</li>
-            <li>Partenaires</li>
-          </ul>
-        </li>
-        <li class="bottom__reseaux">
-
-          <img class="elements__logos--facebook" alt="logo facebook" src="assets/footer/logoFacebook.svg" />
-          <img class="elements__logos--instagram" alt="logo instagram" src="assets/footer/logoInstagram.svg" />
-          <img class="elements__logos--twitter" alt="logo twitter" src="assets/footer/logoTwitter.svg" />
-        </li>
-      </ul>
-    </section>
-  </footer>
-  <script type="text/javascript" src="js/header.js"></script>
-  <script type="text/javascript" src="js/personnalisation.js"></script>
-</body>
-
+            <img
+              class="elements__language--plus"
+              alt="image plus"
+              src="assets/footer/add-fill.svg"
+            />
+          </li>
+          <li class="elements__search">
+            <input type="text" class="searchTerm" placeholder="Rechercher"></li>
+          <li class="elements__logo">
+            <div class="elements__logo--kapHardie">Kap Hardie</div>
+            <div class="elements__logo--logos">
+              <img
+                class="elements__logos--facebook"
+                alt="logo facebook"
+                src="assets/footer/logoFacebook.svg"
+              />
+              <img
+                class="elements__logos--instagram"
+                alt="logo instagram"
+                src="assets/footer/logoInstagram.svg"
+              />
+              <img
+                class="elements__logos--twitter"
+                alt="logo twitter"
+                src="assets/footer/logoTwitter.svg"
+              />
+            </div>
+          </li>
+          <li class="elements__project">
+            Ce site est issue d'un projet étudiant
+          </li>
+        </ul>
+      </section>
+      <section class="footer__desktop">
+        <div class="footer__desktop first">
+        <ul class="footer__desktop middle">
+          <li class="middle__search">
+            <input type="text" class="middle__searche--searchTerm" placeholder="Rechercher"></li>
+          <li>
+            <ul>
+              <li class="middle__newsletter">
+                Inscrivez-vous à notre newsletter
+              </li>
+              <li class="middle__email">
+                <div class="middle__email--enterEmail">Entrez votre email</div>
+                <button class="middle__email--button">S'INSCRIRE</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+        <div class="footer__desktop second">
+        <ul class="footer__desktop bottom">
+          <li class="bottom__logo">Kap Hardie</li>
+          <li class="bottom__adress">
+            <ul class="bottom__adress--elements">
+              <li>Kap Hardie</li>
+              <li>6 rue de l'adresse</li>
+              <li>75000 Paris</li>
+            </ul>
+          </li>
+          <li class="bottom__charte">
+            <ul class="bottom__charte--elements">
+              <li>FAQ</li>
+              <li>Mention légales</li>
+              <li>CGV</li>
+            </ul>
+          </li>
+          <li class="bottom__contact">
+            <ul class="bottom__contact--elements">
+              <li>Nous contacter</li>
+              <li>Recrutement</li>
+              <li>Partenaires</li>
+            </ul>
+          </li>
+          <li class="bottom__reseaux">
+             <img
+                class="elements__logos--facebook"
+                alt="logo facebook"
+                src="assets/footer/logoFacebook.svg"
+              />
+              <img
+                class="elements__logos--instagram"
+                alt="logo instagram"
+                src="assets/footer/logoInstagram.svg"
+              />
+              <img
+                class="elements__logos--twitter"
+                alt="logo twitter"
+                src="assets/footer/logoTwitter.svg"
+              />
+          </li>
+        </ul>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/personnalisation.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+  </body>
 </html>
