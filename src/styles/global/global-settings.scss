@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $text-font-family, sans-serif;
   color: $primary-font-color;
@@ -22,7 +26,6 @@ h1 {
 }
 
 h2 {
-
   font-family: $text-font-family, sans-serif;
   color: $secondary-font-color;
 
@@ -63,7 +66,7 @@ button {
 // LOGO
 
 .logo {
-  font-family: "Baumans";
+  font-family: 'Baumans';
   font-size: 32px;
 }
 

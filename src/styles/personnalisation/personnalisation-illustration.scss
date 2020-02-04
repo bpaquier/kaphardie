@@ -245,54 +245,124 @@
       display: block;
     }
   }
-  .picture__side.picture--1.is-visible ~ .visiere-picture--side {
-    width: 122px;
-    left: 108px;
-    top: 107px;
-    @media (min-width: 1100px) {
-      width: 250px;
-      left: 210px;
-      top: 183px;
+
+  .bouton__side {
+    position: absolute;
+    display: none;
+
+    &.is-visible {
+      display: block;
     }
   }
-  .picture__side.picture--2.is-visible ~ .visiere-picture--side {
-    width: 122px;
-    left: 108px;
-    top: 107px;
-    @media (min-width: 1100px) {
-      width: 250px;
-      left: 210px;
-      top: 183px;
+
+  .picture__side.picture--1.is-visible {
+    & ~ .visiere-picture--side {
+      width: 122px;
+      left: 108px;
+      top: 107px;
+      @media (min-width: 1100px) {
+        width: 250px;
+        left: 210px;
+        top: 183px;
+      }
+    }
+    & ~ .bouton__side {
+      width: 20px;
+      top: 29px;
+      left: 54px;
+      @media (min-width: 1100px) {
+        width: 36px;
+        left: 120px;
+        top: 30px;
+      }
     }
   }
-  .picture__side.picture--3.is-visible ~ .visiere-picture--side {
-    width: 127px;
-    left: 104px;
-    top: 105px;
-    @media (min-width: 1100px) {
-      width: 250px;
-      left: 210px;
-      top: 183px;
+  .picture__side.picture--2.is-visible {
+    & ~ .visiere-picture--side {
+      width: 122px;
+      left: 108px;
+      top: 107px;
+      @media (min-width: 1100px) {
+        width: 250px;
+        left: 210px;
+        top: 183px;
+      }
+    }
+    & ~ .bouton__side {
+      width: 20px;
+      top: 28px;
+      left: 56px;
+      @media (min-width: 1100px) {
+        width: 36px;
+        left: 120px;
+        top: 30px;
+      }
     }
   }
-  .picture__side.picture--4.is-visible ~ .visiere-picture--side {
-    width: 127px;
-    left: 104px;
-    top: 105px;
-    @media (min-width: 1100px) {
-      width: 250px;
-      left: 210px;
-      top: 183px;
+  .picture__side.picture--3.is-visible {
+    & ~ .visiere-picture--side {
+      width: 127px;
+      left: 104px;
+      top: 105px;
+      @media (min-width: 1100px) {
+        width: 250px;
+        left: 210px;
+        top: 183px;
+      }
+    }
+    & ~ .bouton__side {
+      width: 20px;
+      top: 28px;
+      left: 56px;
+      @media (min-width: 1100px) {
+        width: 39px;
+        left: 120px;
+        top: 30px;
+      }
     }
   }
-  .picture__side.picture--5.is-visible ~ .visiere-picture--side {
-    width: 127px;
-    left: 104px;
-    top: 105px;
-    @media (min-width: 1100px) {
-      width: 250px;
-      left: 210px;
-      top: 183px;
+  .picture__side.picture--4.is-visible {
+    & ~ .visiere-picture--side {
+      width: 127px;
+      left: 104px;
+      top: 105px;
+      @media (min-width: 1100px) {
+        width: 250px;
+        left: 210px;
+        top: 183px;
+      }
+    }
+    & ~ .bouton__side {
+      width: 20px;
+      top: 28px;
+      left: 56px;
+      @media (min-width: 1100px) {
+        width: 39px;
+        left: 122px;
+        top: 29px;
+      }
+    }
+  }
+  .picture__side.picture--5.is-visible {
+    & ~ .visiere-picture--side {
+      width: 127px;
+      left: 104px;
+      top: 105px;
+      @media (min-width: 1100px) {
+        width: 250px;
+        left: 210px;
+        top: 183px;
+      }
+    }
+    & ~ .bouton__side {
+      width: 20px;
+      top: 28px;
+      left: 56px;
+      @media (min-width: 1100px) {
+        width: 39px;
+        left: 122px;
+        top: 29px;
+      }
     }
   }
 }

@@ -128,18 +128,26 @@ function chooseVisiere() {
 }
 
 function chooseBouton() {
-  let boutonNoir = document.querySelector('.bouton__face--noir');
-  let boutonBordeaux = document.querySelector('.bouton__face--bordeaux');
+  let boutonNoirFace = document.querySelector('.bouton__face--noir');
+  let boutonBordeauxFace = document.querySelector('.bouton__face--bordeaux');
+  let boutonNoirSide = document.querySelector('.bouton__side--noir');
+  let boutonBordeauxSide = document.querySelector('.bouton__side--bordeaux');
   let selectedElement = document.querySelector('.sample__bouton.is-selected');
   if (selectedElement.classList.contains('sample--bordeaux')) {
-    boutonBordeaux.classList.add('is-visible');
-    boutonNoir.classList.remove('is-visible');
+    boutonBordeauxFace.classList.add('is-visible');
+    boutonNoirFace.classList.remove('is-visible');
+    boutonBordeauxSide.classList.add('is-visible');
+    boutonNoirSide.classList.remove('is-visible');
   } else if (selectedElement.classList.contains('sample--noir')) {
-    boutonNoir.classList.add('is-visible');
-    boutonBordeaux.classList.remove('is-visible');
+    boutonNoirFace.classList.add('is-visible');
+    boutonBordeauxFace.classList.remove('is-visible');
+    boutonNoirSide.classList.add('is-visible');
+    boutonBordeauxSide.classList.remove('is-visible');
   } else {
-    boutonNoir.classList.remove('is-visible');
-    boutonBordeaux.classList.remove('is-visible');
+    boutonNoirFace.classList.remove('is-visible');
+    boutonBordeauxFace.classList.remove('is-visible');
+    boutonNoirSide.classList.remove('is-visible');
+    boutonBordeauxSide.classList.remove('is-visible');
   }
 }
 
