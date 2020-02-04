@@ -1,5 +1,6 @@
 let $priceElt = document.querySelector('.price');
 let price = 249.99;
+let path = '';
 
 function selectProduct(product) {
   let prevSelection = document.querySelector('.' + product + '.is-selected');
@@ -207,3 +208,19 @@ selectProduct('logos');
 selectProduct('view-picture');
 chooseQuantity();
 chooseSizePersonnalisation();
+
+/* function createPath() {
+  path = '';
+  let image = document.createElement('img');
+  document.querySelectorAll('.path.is-selected').forEach(function(element) {
+    path += element.getAttribute('value');
+  });
+  image.src = 'assets/cassequettes/frontwaxliegeorange.png';
+  image.classList.add('picture__face');
+  image.classList.add('is-visible');
+  image.classList.add('picture--1');
+  document
+    .querySelector('.main__pictures.main__pictures--face')
+    .appendChild(image);
+  console.log(path);
+} */
