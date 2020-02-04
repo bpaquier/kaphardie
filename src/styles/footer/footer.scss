@@ -4,7 +4,6 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 10%;
   max-width: 1366px;
 }
@@ -55,6 +54,9 @@ footer {
 }
 .footer__bottom {
   border-top: #b4b4bc solid 1px;
+  text-align: center;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 
 .elements__newsletter {
@@ -180,14 +182,15 @@ footer {
   }
 
   .footer__services div {
-    width: 100%;
+    width: 84%;
+    text-align: center;
   }
 
   .services {
     display: flex;
-    justify-content: space-evenly;
-    padding: 2px;
-    width: 100%;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -199,6 +202,8 @@ footer {
   .middle {
     display: flex;
     justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
     align-content: flex-start;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -209,7 +214,7 @@ footer {
     background-color: #fbfbfb;
     color: #b4b4bc;
     outline: none;
-    width: 100%;
+    width: 150%;
     text-align: center;
     border-left-style: hidden;
     border-top-style: hidden;
@@ -250,6 +255,8 @@ footer {
   .bottom {
     display: flex;
     justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
     border-top: #b4b4bc solid 1px;
     padding-top: 40px;
     margin-bottom: 50px;
@@ -258,7 +265,7 @@ footer {
 
   .bottom__logo {
     font-family: "Baumans";
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .bottom__adress {
