@@ -1107,8 +1107,9 @@
     <script type="text/javascript" src="js/collection.js"></script>
 
 
-<footer class="footer">
+    <footer class="footer">
       <section class="footer__services">
+        <div>
         <ul class="footer__services services">
           <li class="services__paiement">
             <img
@@ -1146,6 +1147,7 @@
             >
           </li>
         </ul>
+        </div>
       </section>
       <section class="footer__bottom">
         <ul class="footer__elements elements">
@@ -1210,19 +1212,28 @@
           </li>
         </ul>
       </section>
+
+
       <section class="footer__desktop">
+        <div class="footer__desktop first">
         <ul class="footer__desktop middle">
           <li class="middle__search">
             <input type="text" class="middle__searche--searchTerm" placeholder="Rechercher"></li>
-          
-          <il class="middle__newsletter">
-            Inscrivez-vous à notre newsletter
+          <li>
+            <ul>
+              <li class="middle__newsletter">
+                Inscrivez-vous à notre newsletter
+              </li>
+              <li class="middle__email">
+                <div class="middle__email--enterEmail">Entrez votre email</div>
+                <button class="middle__email--button">S'INSCRIRE</button>
+              </li>
+            </ul>
           </li>
-          <li class="middle__email">
-            <div class="middle__email--enterEmail">Entrez votre email</div>
-            <button class="middle__email--button">S'INSCRIRE</button>
-          </il>
         </ul>
+        </div>
+
+        <div class="footer__desktop second">
         <ul class="footer__desktop bottom">
           <li class="bottom__logo">Kap Hardie</li>
           <li class="bottom__adress">
@@ -1246,7 +1257,7 @@
               <li>Partenaires</li>
             </ul>
           </li>
-          <il class="bottom__reseaux">
+          <li class="bottom__reseaux"
              <img
                 class="elements__logos--facebook"
                 alt="logo facebook"
@@ -1262,14 +1273,11 @@
                 alt="logo twitter"
                 src="assets/footer/logoTwitter.svg"
               />
-          </il>
-
+          </li>
         </ul>
+        </div>
       </section>
     </footer>
     <script type="text/javascript" src="js/personnalisation.js"></script>
-  </body>
-</html>
-
   </body>
 </html>
