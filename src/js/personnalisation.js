@@ -200,6 +200,17 @@ function chooseLogoColor() {
   }
 }
 
+function purchaseArticle() {
+  let $button = document.querySelector('.buy-section__cta');
+  let $rassurance = document.querySelector('.personnalisation__rassurance');
+  $button.addEventListener('click', function() {
+    $rassurance.classList.add('is-visible');
+    setTimeout(() => {
+      $rassurance.classList.remove('is-visible');
+    }, 3000);
+  });
+}
+
 selectProduct('sample--visiere');
 selectProduct('sample--tissu');
 selectProduct('sample__bouton');
@@ -208,6 +219,7 @@ selectProduct('logos');
 selectProduct('view-picture');
 chooseQuantity();
 chooseSizePersonnalisation();
+purchaseArticle();
 
 /* function createPath() {
   path = '';
