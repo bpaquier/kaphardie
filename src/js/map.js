@@ -4,11 +4,9 @@ let previousSelection = document.querySelector(
   '.map__element.map__element--selected'
 );
 let countriesDescription = document.querySelectorAll('.map__element');
-
+console.log(countriesDescription);
 (function showCountryDescription() {
-  let countries = document.querySelectorAll(
-    '#FR, #IN, #PT, #ID, #GH, #BR, #UG'
-  );
+  let countries = document.querySelectorAll('.productor');
 
   for (let i = 0; i < countries.length; i++) {
     countries[i].addEventListener('click', function() {
