@@ -4,7 +4,8 @@ let previousSelection = document.querySelector(
   '.map__element.map__element--selected'
 );
 let countriesDescription = document.querySelectorAll('.map__element');
-console.log(countriesDescription);
+let $crossButton = document.querySelector('.cross');
+
 (function showCountryDescription() {
   let countries = document.querySelectorAll('.productor');
 
@@ -46,11 +47,11 @@ console.log(countriesDescription);
   });
 })();
 
-(function() {
+(function checkIfDeviceIstactile() {
   try {
     document.createEvent('TouchEvent');
-    alert('oui');
+    $crossButton.getElementsByClassName.display = 'block';
   } catch (e) {
-    alert('non');
+    return;
   }
 })();
