@@ -167,8 +167,10 @@
 .buy-section__cta {
   margin-top: 16px;
   padding: 16px 40px;
+  border-radius: 3px;
 
   &:hover {
+    cursor: pointer;
     background-color: $primary-background-color;
     color: $orange-color;
     border-color: $orange-color;
@@ -178,7 +180,20 @@
   }
 }
 
+.purchase-confirmation {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: rgb(161, 219, 175);
+  border-radius: 3px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
 .personnalisation__rassurance {
+  z-index: -1;
   width: 80%;
   max-width: 390px;
   color: $secondary-font-color;
@@ -186,7 +201,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateY(-35px);
+  transition: transform 0.3s linear;
 
+  &.is-visible {
+    transform: none;
+
+    .purchase-confirmation {
+      opacity: 1;
+    }
+  }
   @media (min-width: 1100px) {
     font-size: 10px;
   }
