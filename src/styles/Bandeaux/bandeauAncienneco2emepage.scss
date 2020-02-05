@@ -5,7 +5,7 @@
   height: 392px;
   margin-top: 37px;
   margin-bottom: 59px;
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     position: relative;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     position: absolute;
     top: 10%;
     display: flex;
@@ -33,17 +33,21 @@
 .Bandeaubis__content--title {
   font-size: 20px;
   color: $primary-background-color;
-  font-family: "signika";
+  font-family: 'signika';
   padding-top: 8px;
   padding-right: 20px;
   padding-left: 20px;
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     text-align: left;
-    font-size: 45px;
-    width: 600px;
+    font-size: 32px;
+    width: 380px;
     padding-bottom: 5%;
     padding-right: 0px;
     padding-left: 0px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 45px;
+    width: 600px;
   }
 }
 .Bandeaubis__image {
@@ -55,22 +59,22 @@
       #000000 1.19%,
       rgba(53, 52, 52, 0) 74.69%
     ),
-    url("/assets/landing/Photo2pagecollection.png");
+    url('/assets/landing/Photo2pagecollection.png');
   background-position: top;
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position: right;
   position: absolute;
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     background: linear-gradient(
         136.22deg,
         #000000 12.34%,
         rgba(0, 0, 0, 0) 59.68%
       ),
-      url("/assets/landing/Photopagecollectionbigsize.jpg");
+      url('/assets/landing/Photopagecollectionbigsize.jpg');
     position: static;
     max-width: 1366px;
     height: 414px;
-    background-position: bottom;
+    background-position: bottom right;
   }
 }
 
@@ -80,24 +84,28 @@
   left: 20px;
   padding: 6px 25px;
   border: 1px solid #ea7307;
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     padding: 14px 30px;
     left: 0px;
   }
 }
 .Bandeaubis__content--subtitle {
-  font-family: "open-sans";
+  font-family: 'open-sans';
   color: $primary-background-color;
   position: absolute;
   top: 80px;
   width: 200px;
   padding-left: 20px;
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     color: $primary-background-color;
     position: static;
     padding-top: 2;
-    width: 475px;
+    width: 320px;
     padding-left: 0px;
+    font-size: 16px;
+  }
+  @media (min-width: 1100px) {
     font-size: 18px;
+    width: 475px;
   }
 }
