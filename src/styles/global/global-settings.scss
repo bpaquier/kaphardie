@@ -3,7 +3,6 @@
 }
 
 body {
-  font-family: $text-font-family, sans-serif;
   color: $primary-font-color;
   display: flex;
   flex-direction: column;
@@ -42,6 +41,7 @@ h2 {
 
 button {
   text-transform: uppercase;
+  outline: none;
 
   &:hover {
     cursor: pointer;
