@@ -282,6 +282,10 @@ footer {
   .bottom__logo {
     font-family: "Baumans";
     font-size: 28px;
+    
+    a{
+      color: $primary-background-color;
+    }
   }
 
   .bottom__adress {

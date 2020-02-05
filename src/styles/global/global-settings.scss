@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+
+  &:visited{
+    color: $primary-font-color;
+  }
+}
+
 body {
   color: $primary-font-color;
   display: flex;
