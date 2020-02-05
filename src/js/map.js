@@ -9,7 +9,7 @@ console.log(countriesDescription);
   let countries = document.querySelectorAll('.productor');
 
   for (let i = 0; i < countries.length; i++) {
-    countries[i].addEventListener('click', function() {
+    countries[i].addEventListener('mouseover', function() {
       if (!isDescription) {
         $mapConteneur.classList.add('is-visible');
         previousSelection.classList.remove('map__element--selected');
@@ -25,7 +25,7 @@ console.log(countriesDescription);
 
 (function closeCountryDescription() {
   document.querySelectorAll('.close').forEach(element => {
-    element.addEventListener('click', function() {
+    element.addEventListener('mouseover', function() {
       if (isDescription) {
         previousSelection.classList.remove('map__element--selected');
         $mapConteneur.classList.remove('is-visible');
