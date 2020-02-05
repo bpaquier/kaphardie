@@ -5,12 +5,13 @@
 a {
   text-decoration: none;
 
-  &:visited{
+  &:visited {
     color: $primary-font-color;
   }
 }
 
 body {
+  font-family: $text-font-family;
   color: $primary-font-color;
   display: flex;
   flex-direction: column;
