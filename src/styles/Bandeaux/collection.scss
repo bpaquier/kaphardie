@@ -59,15 +59,17 @@
   }
 
   .info__cta {
+    text-decoration: none;
+    text-transform: uppercase;
     position: absolute;
-    bottom: 16px;
+    bottom: 8px;
     right: 12px;
-    padding: 4px 24px;
+    padding: 12px 32px;
     @media (min-width: 768px) {
+      text-align: center;
       position: static;
-      width: 50%;
-      height: 20%;
-      max-width: 180px;
+      padding: 10px;
+      width: 130px;
       background-color: $orange-color;
       color: $primary-background-color;
     }
