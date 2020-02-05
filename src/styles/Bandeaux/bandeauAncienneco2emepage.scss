@@ -1,0 +1,103 @@
+.Bandeaubis {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 392px;
+  margin-top: 37px;
+  margin-bottom: 59px;
+  @media (min-width: 700px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.Bandeaubis__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  @media (min-width: 700px) {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 150px;
+    margin-left: 8%;
+  }
+}
+.Bandeaubis__content--title {
+  font-size: 20px;
+  color: $primary-background-color;
+  font-family: "signika";
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  @media (min-width: 700px) {
+    text-align: left;
+    font-size: 45px;
+    width: 600px;
+    padding-bottom: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.Bandeaubis__image {
+  width: 100%;
+  height: 392px;
+  max-width: 320px;
+  background: linear-gradient(
+      136.77deg,
+      #000000 1.19%,
+      rgba(53, 52, 52, 0) 74.69%
+    ),
+    url("/assets/landing/Photo2pagecollection.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  @media (min-width: 700px) {
+    background: linear-gradient(
+        136.22deg,
+        #000000 12.34%,
+        rgba(0, 0, 0, 0) 59.68%
+      ),
+      url("/assets/landing/Photopagecollectionbigsize.jpg");
+    position: static;
+    max-width: 1366px;
+    height: 414px;
+    background-position: bottom;
+  }
+}
+
+.info__ctaanci {
+  position: absolute;
+  top: 196px;
+  left: 20px;
+  padding: 6px 25px;
+  border: 1px solid #ea7307;
+  @media (min-width: 700px) {
+    padding: 14px 30px;
+    left: 0px;
+  }
+}
+.Bandeaubis__content--subtitle {
+  font-family: "open-sans";
+  color: $primary-background-color;
+  position: absolute;
+  top: 80px;
+  width: 200px;
+  padding-left: 20px;
+  @media (min-width: 700px) {
+    color: $primary-background-color;
+    position: static;
+    padding-top: 2;
+    width: 475px;
+    padding-left: 0px;
+    font-size: 18px;
+  }
+}
