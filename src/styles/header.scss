@@ -179,7 +179,7 @@
 }
 
 .header__menuItem {
-  width: 100px;
+  width: 150px;
   overflow: visible;
   font-family: $title-font-family;
   font-size: 20px;
@@ -210,10 +210,13 @@
 
   .header__logoKH {
     display: block;
-    color: $orange-color;
     font-family: 'Baumans';
     font-size: 28px;
     padding-left: 20px;
+    
+    a {
+      color: $orange-color;
+    }
   }
 
   .header__links {
