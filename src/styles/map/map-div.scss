@@ -46,13 +46,7 @@
   stroke-width: 0.3;
 }
 
-#FR,
-#IN,
-#PT,
-#ID,
-#GH,
-#BR,
-#UG {
+.land.productor {
   fill: $orange-color;
 
   &:hover {
