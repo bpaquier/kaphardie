@@ -4,6 +4,11 @@
 
 a {
   text-decoration: none;
+  outline: none;
+
+  &:link {
+    color: $primary-font-color;
+  }
 
   &:visited {
     color: $primary-font-color;
