@@ -73,6 +73,12 @@
       width: 130px;
       background-color: $orange-color;
       color: $primary-background-color;
+
+      &:hover {
+        background-color: $primary-background-color;
+        color: $orange-color;
+        border-color: $orange-color;
+      }
     }
   }
 }
