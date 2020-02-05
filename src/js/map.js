@@ -35,11 +35,22 @@ console.log(countriesDescription);
   });
 })();
 
-window.addEventListener('resize', function() {
-  if (window.innerWidth > 768) {
-    countriesDescription.forEach(element => {
-      element.classList.remove('map__element--selected');
-    });
-    return;
+(function checkInnerWidth() {
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      countriesDescription.forEach(element => {
+        element.classList.remove('map__element--selected');
+      });
+      return;
+    }
+  });
+})();
+
+(function() {
+  try {
+    document.createEvent('TouchEvent');
+    alert('oui');
+  } catch (e) {
+    alert('non');
   }
-});
+})();
