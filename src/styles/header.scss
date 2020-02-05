@@ -6,7 +6,7 @@
   background-image:
     url(/assets/landing/Header/backgroundHeader.jpg);
   background-size: cover;
-  background-position-x: 55%;
+  background-position-x: 45%;
   background-repeat: no-repeat;
 }
 
@@ -61,22 +61,22 @@
 
 .header__content {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 6.25%;
 }
 
 .header__title {
-  width: 75%;
+  width: 55%;
   font-size: 20px;
   text-transform: uppercase;
-  color: $primary-background-color;
+  color: $primary-font-color;
   margin-bottom: 24px;
 }
 
 .header__subtitle {
-  width: 75%;
+  width: 55%;
   font-size: 12px;
-  color: $primary-background-color;
+  color: $primary-font-color;
   margin-bottom: 24px;
 }
 
@@ -98,7 +98,7 @@
 @mixin iconBurger {
   width: 40px;
   height: 5px;
-  background-color: $tertiary-color;
+  background-color: $orange-color;
   border-radius: 10px;
 }
 
@@ -195,6 +195,11 @@
 // RESPONSIVE 768PX
 
 @media (min-width: 768px) {
+
+  .header {
+    height: 90vh;
+  }
+
   .header__nav {
     background-color: $primary-background-color;
     padding: 0;
@@ -260,7 +265,7 @@
   }
 
   .header__title {
-    width: 60%;
+    width: 50%;
     font-size: 30px;
     margin-bottom: 35px;
   }
@@ -285,5 +290,22 @@
   .header__menu,
   .header__menuContent {
     display: none;
+  }
+}
+
+// RESPONSIVE 1100PX
+
+@media (min-width:1100px){
+
+  .header__content {
+    top: 20%;
+  }
+
+  .header__title {
+    font-size: 40px;
+  }
+
+  .header__subtitle {
+    font-size: 24px;
   }
 }
