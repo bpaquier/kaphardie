@@ -15,6 +15,9 @@ a {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $text-font-family;
   color: $primary-font-color;
