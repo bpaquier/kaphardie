@@ -212,9 +212,12 @@ footer {
     background-color: #fbfbfb;
     color: #b4b4bc;
     outline: none;
-    width: 170%;
+    width: 180%;
+    height: 25px;
     font-family: $text-font-family;
+
     text-align: center;
+    border-radius: 2px;
     border-left-style: hidden;
     border-top-style: hidden;
     border-right-style: hidden;
@@ -234,9 +237,21 @@ footer {
   .middle__email--enterEmail {
     font-size: 12px;
     width: 200px;
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: hidden;
+    background-color: $secondary-color;
+    color: $primary-background-color;
     border-bottom: #fbfbfb solid 1px;
     text-align: center;
-    margin-right: 25px;
+    margin-right: 15px;
+    text-align: start;
+  }
+
+  .middle__email--enterEmail::placeholder {
+    color: $primary-background-color;
+    font-family: $text-font-family;
   }
 
   .middle__email--button {
