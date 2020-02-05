@@ -1,31 +1,47 @@
-let prevButton = document.querySelector("#prevbutton");
-let NextButton = document.querySelector("#nextbutton");
-let landDiv = document.querySelectorAll(".map__element");
-let carouselPoint = document.querySelectorAll(".carousel__point");
-let carou = 0;
-prevButton.style.visibility = "hidden";
-function prevnext(updown) {
-  landDiv[carou].classList.remove("map__element--selected");
-  carouselPoint[carou].classList.remove("carousel__point--selected");
-  carou = updown;
-  landDiv[carou].classList.add("map__element--selected");
-  carouselPoint[carou].classList.add("carousel__point--selected");
-  if (carou === 0) {
-    prevButton.style.visibility = "hidden";
+let isDescription = false;
+let $mapConteneur = document.querySelector('.map__countries');
+let previousSelection = document.querySelector(
+  '.map__element.map__element--selected'
+);
+let countriesDescription = document.querySelectorAll('.map__element');
+
+(function showCountryDescription() {
+  let countries = document.querySelectorAll(
+    '#FR, #IN, #PT, #ID, #GH, #BR, #UG'
+  );
+
+  for (let i = 0; i < countries.length; i++) {
+    countries[i].addEventListener('click', function() {
+      if (!isDescription) {
+        $mapConteneur.classList.add('is-visible');
+        previousSelection.classList.remove('map__element--selected');
+        countriesDescription[i].classList.add('map__element--selected');
+        previousSelection = countriesDescription[i];
+        setTimeout(() => {
+          isDescription = true;
+        }, 0.1);
+      }
+    });
   }
-  if (carou > 0) {
-    prevButton.style.visibility = "visible";
+})();
+
+(function closeCountryDescription() {
+  document.querySelectorAll('.close').forEach(element => {
+    element.addEventListener('click', function() {
+      if (isDescription) {
+        previousSelection.classList.remove('map__element--selected');
+        $mapConteneur.classList.remove('is-visible');
+        isDescription = false;
+      }
+    });
+  });
+})();
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 768) {
+    countriesDescription.forEach(element => {
+      element.classList.remove('map__element--selected');
+    });
+    return;
   }
-  if (carou < landDiv.length - 1) {
-    NextButton.style.visibility = "visible";
-  }
-  if (carou === landDiv.length - 1) {
-    NextButton.style.visibility = "hidden";
-  }
-}
-prevButton.addEventListener("click", function() {
-  prevnext(carou - 1);
-});
-NextButton.addEventListener("click", function() {
-  prevnext(carou + 1);
 });
