@@ -33,7 +33,7 @@
 .Bandeaubis__content--title {
   font-size: 20px;
   color: $primary-background-color;
-  font-family: 'signika';
+  font-family: "signika";
   padding-top: 8px;
   padding-right: 20px;
   padding-left: 20px;
@@ -63,7 +63,7 @@
       #000000 1.19%,
       rgba(53, 52, 52, 0) 74.69%
     ),
-    url('/assets/landing/Photo2pagecollection.png');
+    url("/assets/landing/BackgroundBandeau/Photo2pagecollection.png");
   background-position: top;
   background-repeat: no-repeat;
   background-position: right;
@@ -74,7 +74,7 @@
         #000000 12.34%,
         rgba(0, 0, 0, 0) 59.68%
       ),
-      url('/assets/landing/Photopagecollectionbigsize.jpg');
+      url("/assets/landing/BackgroundBandeau/Photo2pagecollectionbigsize.jpg");
     position: static;
     max-width: 1366px;
     height: 414px;
@@ -96,7 +96,7 @@
   }
 }
 .Bandeaubis__content--subtitle {
-  font-family: 'open-sans';
+  font-family: "open-sans";
   color: $primary-background-color;
   position: absolute;
   top: 80px;
