@@ -54,6 +54,8 @@ let $crossButton = document.querySelector('.cross');
         element.classList.remove('map__element--selected');
       });
       return;
+    } else {
+      countriesDescription[0].classList.add('map__element--selected');
     }
   });
 })();

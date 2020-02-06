@@ -1,5 +1,5 @@
 let $priceElt = document.querySelector('.price');
-let price = 249.99;
+let price = 219.99;
 let path = '';
 
 function selectProduct(product) {
@@ -56,7 +56,7 @@ function chooseQuantity() {
 
 function chooseSizePersonnalisation() {
   let canClose = false;
-  let $selection = document.querySelector('.selection');
+  let $selection = document.querySelector('.size__selection-text');
   let $sizeSelection = document.querySelector('.size__selection');
   let $sizechoice = document.querySelector('.size__choice');
   let $userChoice = document.querySelectorAll('.size__choice--size');
@@ -202,13 +202,22 @@ function chooseLogoColor() {
 
 function purchaseArticle() {
   let $button = document.querySelector('.buy-section__cta');
-  let $rassurance = document.querySelector('.personnalisation__rassurance');
   $button.addEventListener('click', function() {
-    $rassurance.classList.add('is-visible');
+    $button.classList.add('is-buying');
+    $button.innerHTML = 'ajouté au panier';
     setTimeout(() => {
-      $rassurance.classList.remove('is-visible');
+      $button.classList.remove('is-buying');
+      $button.innerHTML = 'ajouter au panier';
+      resetBuySection();
     }, 3000);
   });
+}
+
+function resetBuySection() {
+  document.querySelector('.quantity__value').innerHTML = '1';
+  document.querySelector('.size__selection-text').innerHTML =
+    'Choisissez votre taille';
+  $priceElt.innerHTML = price;
 }
 
 selectProduct('sample--visiere');
