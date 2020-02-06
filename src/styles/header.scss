@@ -81,6 +81,7 @@
 
 .cta {
   padding: 12px 28px;
+  padding-top: 14px;
   border-radius: 3px;
   font-size: 14px;
   font-weight: 600;
@@ -274,19 +275,6 @@
     font-size: 16px;
     margin-bottom: 35px;
   }
-
-  .cta {
-    display: block;
-    padding: 16px 40px;
-    font-size: 18px;
-
-    &:hover {
-      background-color: $orange-color;
-      border: 2px solid $primary-background-color;
-      color: $primary-background-color;
-    }
-  }
-
   .header__menu,
   .header__menuContent {
     display: none;
@@ -306,5 +294,19 @@
 
   .header__subtitle {
     font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cta {
+    display: block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover {
+      background-color: $orange-color;
+      border: 2px solid $primary-background-color;
+      color: $primary-background-color;
+    }
   }
 }

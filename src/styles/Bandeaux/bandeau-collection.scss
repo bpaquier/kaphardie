@@ -71,30 +71,28 @@
     text-decoration: none;
     text-transform: uppercase;
     position: absolute;
+    text-align: center;
     bottom: 8px;
     right: 12px;
-
-
+    width: 180px;
+    height: 43px;
+    background-color: $orange-color;
+    color: $primary-background-color;
     @media (min-width: 768px) {
-      text-align: center;
       position: static;
       font-size: 14px;
       padding-top: 11px;
       width: 200px;
       height: 40px;
-
-      background-color: $orange-color;
-      color: $primary-background-color;
     }
     @media (min-width: 1200px) {
       text-align: center;
       position: static;
-      font-size: 18px;
-      padding-top: 17px;
-      width: 239px;
-      height: 57px;
-      background-color: $orange-color;
-      color: $primary-background-color;
+      padding: 14px 32px;
+      padding-top: 16px;
+      font-size: 16px;
+      width: 206px;
+      height: 50px;
     }
     &:hover {
       background-color: $primary-background-color;
