@@ -40,10 +40,14 @@
   @media (min-width: 768px) {
     text-align: left;
     font-size: 32px;
-    width: 380px;
+    width: 360px;
     padding-bottom: 5%;
     padding-right: 0px;
     padding-left: 0px;
+  }
+  @media (min-width: 800px) {
+    font-size: 45px;
+    width: 380px;
   }
   @media (min-width: 1100px) {
     font-size: 45px;
@@ -74,7 +78,9 @@
     position: static;
     max-width: 1366px;
     height: 414px;
-    background-position: bottom right;
+    background-position: right;
+    background-position-y: -400px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -97,7 +103,6 @@
   width: 200px;
   padding-left: 20px;
   @media (min-width: 768px) {
-    color: $primary-background-color;
     position: static;
     padding-top: 2;
     width: 320px;

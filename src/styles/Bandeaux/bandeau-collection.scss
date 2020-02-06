@@ -28,7 +28,7 @@
     margin-left: 6.8%;
   }
   @media (min-width: 1200px) {
-    height: 200px;
+    height: 250px;
   }
 
   .info__title {
@@ -37,6 +37,7 @@
 
     @media (min-width: 768px) {
       text-align: left;
+      font-size: 32px;
     }
     @media (min-width: 1200px) {
       font-size: 45px;
@@ -55,6 +56,14 @@
     @media (min-width: 768px) {
       color: $secondary-color;
       position: static;
+      font-size: 18px;
+      width: 400px;
+    }
+    @media (min-width: 1200px) {
+      color: $secondary-color;
+      position: static;
+      font-size: 24px;
+      width: 400px;
     }
   }
 
@@ -64,17 +73,33 @@
     position: absolute;
     bottom: 8px;
     right: 12px;
+
+
     @media (min-width: 768px) {
       text-align: center;
       position: static;
+      font-size: 14px;
+      padding-top: 11px;
+      width: 200px;
+      height: 40px;
+
       background-color: $orange-color;
       color: $primary-background-color;
-
-      &:hover {
-        background-color: $primary-background-color;
-        color: $orange-color;
-        border-color: $orange-color;
-      }
+    }
+    @media (min-width: 1200px) {
+      text-align: center;
+      position: static;
+      font-size: 18px;
+      padding-top: 17px;
+      width: 239px;
+      height: 57px;
+      background-color: $orange-color;
+      color: $primary-background-color;
+    }
+    &:hover {
+      background-color: $primary-background-color;
+      color: $orange-color;
+      border-color: $orange-color;
     }
   }
 }
