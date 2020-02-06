@@ -7,13 +7,29 @@
   align-items: center;
   max-width: 485px;
   padding-top: 80px;
+
   @media (min-width: 768px) {
     width: 100%;
     max-width: 1366px;
+
+    &.is-on-screen {
+      .map__world {
+        p {
+          .map__world--svg {
+            g {
+              .land {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 .map__world {
+  overflow: hidden;
   display: none;
   justify-content: center;
 
@@ -45,9 +61,12 @@
   fill: $secondary-color;
   stroke: $primary-font-color;
   stroke-width: 0.3;
+  opacity: 0;
+  transition: opacity 4s;
 }
 
 .land.productor {
+  opacity: 1;
   fill: $orange-color;
 
   &:hover {
@@ -63,7 +82,7 @@
     display: none;
 
     position: absolute;
-    transform: scale(0.8) translateY(-20px);
+    transform: scale(0.8) translateY(40px);
   }
   @media (min-width: 900px) {
     transform: translateY(30px);
