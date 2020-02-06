@@ -5,6 +5,18 @@
   height: 353px;
   margin-bottom: 20px;
 
+  &.is-on-screen {
+    .collections__info {
+      transform: none;
+      opacity: 1;
+    }
+
+    .collections__image {
+      transform: none;
+      opacity: 1;
+    }
+  }
+
   @media (min-width: 768px) {
     position: static;
     display: flex;
@@ -19,6 +31,10 @@
   position: relative;
   width: 100%;
   height: 100%;
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+
   @media (min-width: 768px) {
     position: static;
     display: flex;
@@ -113,8 +129,9 @@
   background-position: top;
   background-position-x: left;
   background-repeat: no-repeat;
-
-  animation: huerotate 5s linear alternate infinite;
+  transform: translateX(50px);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
 
   @media (min-width: 768px) {
     position: static;
