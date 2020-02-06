@@ -137,6 +137,7 @@
 }
 
 .header__menu {
+  display: block;
   background-color: transparent;
   width: 40px;
   height: 40px;
@@ -149,6 +150,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &.is-hidden {
+    display: none;
+  }
 }
 
 .header__iconBurger {
@@ -298,7 +303,7 @@
       height: 2px;
       width: 0;
       background-color: transparent;
-      transition: width .5s ease, background-color .5s ease;
+      transition: width 0.5s ease, background-color 0.5s ease;
     }
 
     li a:hover:after {
