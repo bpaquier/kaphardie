@@ -93,9 +93,13 @@
   background-position: top;
   background-position-x: left;
   background-repeat: no-repeat;
+
+  animation: huerotate 5s linear alternate infinite;
+
   @media (min-width: 768px) {
     position: static;
   }
+
   @media (min-width: 880px) {
     background-size: 100%;
     max-width: 680px;
