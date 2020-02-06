@@ -3,9 +3,8 @@
   width: 100%;
   max-width: 379px;
   height: 353px;
-  padding-top: 80px;
   margin-bottom: 20px;
-  
+
   @media (min-width: 768px) {
     position: static;
     display: flex;
@@ -110,7 +109,7 @@
   height: 254px;
   position: absolute;
   top: 38px;
-  background-image: url("/assets/landing/BackgroundBandeau/CollectionBackgroundimage.png");
+  background-image: url('/assets/landing/BackgroundBandeau/CollectionBackgroundimage.png');
   background-position: top;
   background-position-x: left;
   background-repeat: no-repeat;
