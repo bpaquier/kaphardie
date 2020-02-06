@@ -217,7 +217,7 @@ function resetBuySection() {
   document.querySelector('.quantity__value').innerHTML = '1';
   document.querySelector('.size__selection-text').innerHTML =
     'Choisissez votre taille';
-  $priceElt.innerHTML = price;
+  $priceElt.innerHTML = price + ' €';
 }
 
 selectProduct('sample--visiere');
