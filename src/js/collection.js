@@ -1,8 +1,10 @@
 let seeButton = document.querySelectorAll(".collection__button");
 let divSpeedBuy = document.querySelectorAll(".collection__speedbuy");
-let QuantitySelection = document.querySelectorAll(".quantity");
-let QuantityList = document.querySelectorAll(".quantity__choice");
+let quantitySelection = document.querySelectorAll(".quantity");
+let quantityList = document.querySelectorAll(".quantity__choice");
 let collectionPrice = document.querySelectorAll(".price");
+let quantityValue = document.querySelectorAll(".quantity__choice--value");
+let quantityChoosen = document.querySelectorAll(".quantity__value");
 const sizeDiv = document.querySelectorAll(".cap__size");
 
 let collectionPriceCap = 199.99;
@@ -26,28 +28,79 @@ let collectionPriceCap = 199.99;
   }
 })();
 (function chooseQuantityCollection() {
+  
   let canClose = false;
   collectionPrice.forEach(collectionPrice => {
     collectionPrice.innerHTML = collectionPriceCap + " €";
   });
-  for (let i = 0; i < QuantitySelection.length; i++) {
-    QuantitySelection[i].addEventListener('click',function(){
-      QuantitySelection[i].classList.add("is-choosing");
-      QuantityList[i].classList.add("is-visible"); 
+  for (let i = 0; i < quantitySelection.length; i++) {
+    quantitySelection[i].addEventListener('click',function(){
+      quantitySelection[i].classList.add("is-choosing");
+      quantityList[i].classList.add("is-visible"); 
       setTimeout(() => {
         canClose = true;
       }, 10);
     });
   }
+  for (let i = 0; i < quantityValue.length; i++) {
+    quantityValue[i].addEventListener('click',function(){
+      let quantity = quantityValue[i].getAttribute("value");
+      collectionPrice[i].innerHTML = collectionPriceCap * parseInt(quantity) + " €";
+      quantityChoosen[i].innerHTML = quantity;
+      console.log(collectionPrice[i]);
+      console.log(quantityChoosen[i]);
+      console.log(Math.floor(i/3));
+      console.log(quantity);
+      
+    });
+    
+  }
   document.addEventListener("click", function() {
     if (canClose) {
-      QuantitySelection.forEach(QuantitySelection => {
-        QuantitySelection.classList.remove("is-choosing");
+      quantitySelection.forEach(quantitySelection => {
+        quantitySelection.classList.remove("is-choosing");
       });
-      QuantityList.forEach(QuantityList => {
-        QuantityList.classList.remove("is-visible");
+      quantityList.forEach(quantityList => {
+        quantityList.classList.remove("is-visible");
       });
       canClose = false;
     }
   });
 })();
+
+
+// function chooseQuantity() {
+//   let canClose = false;
+//   let $quantityChoosen = document.querySelector(".quantity__value");
+//   let $QuantitySelection = document.querySelector(".quantity");
+//   let $QuantityList = document.querySelector(".quantity__choice");
+//   let $quantityValue = document.querySelectorAll(".quantity__choice--value");
+//   $priceElt.innerHTML = collectionPrice + " €";
+//   $QuantitySelection.addEventListener("click", function() {
+//     if (!canClose) {
+//       $QuantitySelection.classList.add("is-choosing");
+//       $QuantityList.classList.add("is-visible");
+//       setTimeout(() => {
+//         canClose = true;
+//       }, 10);
+//     }
+//   });
+//   $quantityValue.forEach(element => {
+//     element.addEventListener("click", function() {
+//       let quantity = element.getAttribute("value");
+//       $priceElt.innerHTML = collectionPrice * parseInt(quantity) + " €";
+//       $quantityChoosen.innerHTML = quantity;
+//       $QuantitySelection.classList.remove("is-choosing");
+//       $QuantityList.classList.remove("is-visible");
+//       canClose = false;
+//     });
+//   });
+//   document.addEventListener("click", function() {
+//     if (canClose) {
+//       $QuantitySelection.classList.remove("is-choosing");
+//       $QuantityList.classList.remove("is-visible");
+//       canClose = false;
+//     }
+//   });
+// }
+// chooseQuantity();
