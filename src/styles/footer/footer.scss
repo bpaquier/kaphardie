@@ -65,11 +65,23 @@ footer {
   font-weight: bold;
 }
 
-.elements__email--register {
+.elements__email--button {
   border: none;
   font-family: $text-font-family;
   font-size: 12px;
   padding: 5px;
+  background-color: #fbfbfb;
+  color: #8eafac;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: $text-font-family;
+  border-left-style: hidden;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-bottom-style: hidden;
 }
 
 .elements__email {
@@ -86,14 +98,27 @@ footer {
   border-bottom: #fbfbfb solid 1px;
   text-align: center;
   margin-right: 15px;
+  border-left-style: hidden;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  background-color: $secondary-color;
+  color: $primary-background-color;
 }
 
-.elements__email--register {
+.elements__email--enterEmail::placeholder {
+  color: $primary-background-color;
+  font-family: $text-font-family;
+}
+
+.elements__email--button {
   background-color: #fbfbfb;
   color: #8eafac;
   border-radius: 4px;
   font-weight: bold;
   padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: $text-font-family;
   border-left-style: hidden;
   border-top-style: hidden;
   border-right-style: hidden;
@@ -247,7 +272,6 @@ footer {
     border-bottom: #fbfbfb solid 1px;
     text-align: center;
     margin-right: 15px;
-    text-align: start;
   }
 
   .middle__email--enterEmail::placeholder {
@@ -283,8 +307,8 @@ footer {
   .bottom__logo {
     font-family: "Baumans";
     font-size: 28px;
-    
-    a{
+
+    a {
       color: $primary-background-color;
     }
   }
