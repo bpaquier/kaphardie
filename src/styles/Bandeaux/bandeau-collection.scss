@@ -64,13 +64,9 @@
     position: absolute;
     bottom: 8px;
     right: 12px;
-    padding: 12px 32px;
-
     @media (min-width: 768px) {
       text-align: center;
       position: static;
-      padding: 10px;
-      width: 130px;
       background-color: $orange-color;
       color: $primary-background-color;
 
