@@ -1,4 +1,5 @@
 .collections {
+  overflow: hidden;
   position: relative;
   width: 100%;
   max-width: 379px;
@@ -93,6 +94,7 @@
     right: 12px;
     width: 180px;
     height: 43px;
+    padding: 13px 40px;
     background-color: $orange-color;
     color: $primary-background-color;
     @media (min-width: 768px) {
