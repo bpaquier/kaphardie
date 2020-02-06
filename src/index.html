@@ -267,17 +267,27 @@
       </h2>
       <a href="#personnalisation"><button class="cta cta--light">personnaliser</button></a>
     </div>
-    <div id="header__menu" class="header__menu">
+    <div class="header__menu can-close">
       <div class="header__iconBurger"></div>
     </div>
     <div class="header__menuContent">
       <ul class="header__menuItems">
-        <li class="header__menuItem"><a href="collection.html">Collection</a></li>
-        <li class="header__menuItem"><a href="#personnalisation">Personnalisation</a></li>
-        <li class="header__menuItem"><a href="#map">Nos artisans</a></li>
-        <li class="header__menuItem">connection</li>
-        <li class="header__menuItem">wishlist</li>
-        <li class="header__menuItem">panier</li>
+        <li class="header__menuItem header__menuItem--itemTop"><a href="collection.html">Collection</a></li>
+        <li class="header__menuItem header__menuItem--itemTop can-close"><a
+            href="#personnalisation">Personnalisation</a></li>
+        <li class="header__menuItem header__menuItem--itemTop can-close"><a href="#map">Nos artisans</a></li>
+        <li class="header__menuItem header__menuItem--itemBot can-close"><svg
+            class="header__icon header__icon--menuBurger">
+            <use href="#icon-user"></use>
+          </svg>mon compte</li>
+        <li class="header__menuItem header__menuItem--itemBot can-close"><svg
+            class="header__icon header__icon--menuBurger">
+            <use href="#icon-heart"></use>
+          </svg>wishlist</li>
+        <li class="header__menuItem header__menuItem--itemBot can-close"><svg
+            class="header__icon header__icon--menuBurger">
+            <use href="#icon-cart"></use>
+          </svg>panier</li>
       </ul>
     </div>
   </header>

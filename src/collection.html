@@ -254,8 +254,8 @@
       </symbol>
     </defs>
   </svg>
-  <section class="header__nav" id="header">
-    <a href="index.html">
+  <header class="header__nav" id="header">
+    <a class="header__linkLogo" href="index.html">
       <svg class="header__logoMobilKH">
         <use href="#icon-MobilLogoKH"></use>
       </svg>
@@ -280,20 +280,30 @@
           <use href="#icon-cart"></use>
         </svg>
       </div>
-      <div id="header__menu" class="header__menu">
+      <div class="header__menu can-close">
         <div class="header__iconBurger"></div>
       </div>
       <div class="header__menuContent header__menuContent--collection">
         <ul class="header__menuItems">
-          <li class="header__menuItem"><a href="collection.html">collection</a></li>
-          <li class="header__menuItem"><a href="index.html/#personnalisation">personnalisation</a></li>
-          <li class="header__menuItem"><a href="index.html/#map">nos artisans</a></li>
-          <li class="header__menuItem">connection</li>
-          <li class="header__menuItem">wishlist</li>
-          <li class="header__menuItem">panier</li>
+          <li class="header__menuItem header__menuItem--itemTop"><a href="collection.html">Collection</a></li>
+          <li class="header__menuItem header__menuItem--itemTop"><a
+              href="index.html/#personnalisation">Personnalisation</a></li>
+          <li class="header__menuItem header__menuItem--itemTop"><a href="index.html/#map">Nos artisans</a></li>
+          <li class="header__menuItem header__menuItem--itemBot can-close"><svg
+              class="header__icon header__icon--menuBurger">
+              <use href="#icon-user"></use>
+            </svg>mon compte</li>
+          <li class="header__menuItem header__menuItem--itemBot can-close"><svg
+              class="header__icon header__icon--menuBurger">
+              <use href="#icon-heart"></use>
+            </svg>wishlist</li>
+          <li class="header__menuItem header__menuItem--itemBot can-close"><svg
+              class="header__icon header__icon--menuBurger">
+              <use href="#icon-cart"></use>
+            </svg>panier</li>
         </ul>
       </div>
-  </section>
+  </header>
   <main>
     <div class="collection" id="collection">
       <h1 class="collection__main-title">Nos créateurs l’ont fait pour vous</h1>
