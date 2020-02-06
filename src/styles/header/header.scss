@@ -215,11 +215,27 @@
   height: 100vh;
   width: 100%;
   background-color: $primary-background-color;
+  line-height: 100px;
 
   & li:nth-child(4) {
     margin-top: 16px;
   }
+
+  li a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: transparent;
+    transition: width 0.5s ease 1s, background-color 0.5s ease 1s;
+  }
+
+  li.open a:after {
+    width: 100%;
+    background-color: $secondary-color;
+  }
 }
+
 
 .header__menuItem {
   width: 200px;
@@ -231,9 +247,9 @@
 .header__menuItem--itemTop {
   font-size: 28px;
   font-weight: 900;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 2px solid $tertiary-color;
+  border-bottom: 2px solid $tertiary-color; */
 }
 
 .header__menuItem--itemBot {
@@ -265,9 +281,11 @@
     max-width: 1366px;
     z-index: 2;
   }
+
   .header__icon:hover {
     fill: $orange-color;
   }
+  
   .header__linkLogo {
     display: none;
   }
