@@ -70,7 +70,7 @@
     .header__subtitle {
       opacity: 1;
     }
-    .cta {
+    .header__cta {
       opacity: 1;
     }
   }
@@ -95,7 +95,7 @@
   transition: opacity 4s;
 }
 
-.cta {
+.header__cta {
   padding: 12px 28px;
   padding-top: 14px;
   border-radius: 3px;
