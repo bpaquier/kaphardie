@@ -98,3 +98,11 @@ button {
 .logo--footer {
   color: $primary-background-color;
 }
+::selection {
+  color: black;
+  background: #ea7307;
+}
+::-moz-selection {
+  color: black;
+  background: #ea7307;
+}
