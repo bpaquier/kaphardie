@@ -62,6 +62,18 @@
   position: absolute;
   top: 20%;
   left: 6.25%;
+
+  &.is-on-screen {
+    .header__title {
+      opacity: 1;
+    }
+    .header__subtitle {
+      opacity: 1;
+    }
+    .cta {
+      opacity: 1;
+    }
+  }
 }
 
 .header__title {
@@ -70,6 +82,8 @@
   text-transform: uppercase;
   color: $primary-font-color;
   margin-bottom: 24px;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .header__subtitle {
@@ -77,6 +91,8 @@
   font-size: 12px;
   color: $primary-font-color;
   margin-bottom: 24px;
+  opacity: 0;
+  transition: opacity 4s;
 }
 
 .cta {
@@ -85,6 +101,8 @@
   border-radius: 3px;
   font-size: 14px;
   font-weight: 600;
+  opacity: 0;
+  transition: opacity 5s;
 
   &:hover {
     background-color: $orange-color;
@@ -139,7 +157,7 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     display: block;
     @include iconBurger;
     transition: transform 0.3s;
@@ -194,7 +212,7 @@
   width: 100%;
   background-color: $primary-background-color;
 
-  & li:nth-child(4){
+  & li:nth-child(4) {
     margin-top: 16px;
   }
 }
@@ -228,7 +246,6 @@
   height: 15px;
 }
 
-
 // RESPONSIVE 768PX
 
 @media (min-width: 768px) {
@@ -255,7 +272,7 @@
 
   .header__logoKH {
     display: block;
-    font-family: "Baumans";
+    font-family: 'Baumans';
     font-size: 28px;
     padding-left: 20px;
 
