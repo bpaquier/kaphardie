@@ -287,18 +287,23 @@
     justify-content: space-between;
     font-family: $title-font-family;
     font-size: 16px;
+    line-height: 25px;
     color: $primary-font-color;
     text-transform: capitalize;
 
-    li {
-      line-height: 150%;
-      padding-bottom: 2px 0;
-      transition: border-bottom 0.2s;
+    li a:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 2px;
+      width: 0;
+      background-color: transparent;
+      transition: width .5s ease, background-color .5s ease;
     }
 
-    li:hover {
-      border-bottom: 1px solid $secondary-color;
-      cursor: pointer;
+    li a:hover:after {
+      width: 100%;
+      background-color: $orange-color;
     }
   }
 
