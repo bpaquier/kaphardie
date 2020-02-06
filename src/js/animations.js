@@ -1,6 +1,9 @@
 let $elementsMove = document.querySelectorAll('.element--moving');
 let $headerContent = document.querySelector('.header__content');
-console.log($elementsMove);
+let $burgerButton = document.querySelector('.header__menu');
+let $footer = document.querySelector('footer');
+let $burgerButtonBottomPosition =
+  $burgerButton.offsetTop + $burgerButton.offsetHeight;
 
 function revealElement() {
   $elementsMove.forEach(function(element) {
@@ -11,8 +14,16 @@ function revealElement() {
   });
 }
 
+function toogleMenuBurger() {
+  $burgerButton.classList.toggle(
+    'is-hidden',
+    window.scrollY + $burgerButtonBottomPosition > $footer.offsetTop
+  );
+}
+
 window.addEventListener('scroll', function() {
   revealElement();
+  toogleMenuBurger();
 });
 
 window.addEventListener('load', function() {
