@@ -1,4 +1,4 @@
-.Bandeaubis {
+.anciennesCollections {
   position: relative;
   width: 100%;
   max-width: 320px;
@@ -14,7 +14,7 @@
     height: auto;
   }
 }
-.Bandeaubis__content {
+.anciennesCollections__content {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -30,7 +30,7 @@
     margin-left: 8%;
   }
 }
-.Bandeaubis__content--title {
+.anciennesCollections__title {
   font-size: 20px;
   color: $primary-background-color;
   font-family: "signika";
@@ -54,7 +54,48 @@
     width: 600px;
   }
 }
-.Bandeaubis__image {
+.anciennesCollections__subtitle {
+  font-family: "open-sans";
+  color: $primary-background-color;
+  position: absolute;
+  top: 80px;
+  width: 200px;
+  padding-left: 20px;
+  @media (min-width: 768px) {
+    position: static;
+    padding-top: 2;
+    width: 320px;
+    padding-left: 0px;
+    font-size: 16px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 18px;
+    width: 475px;
+  }
+}
+.anciennesCollections__cta {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  top: 196px;
+  left: 20px;
+  padding: 6px 25px;
+  border: 1px solid #ea7307;
+  @media (min-width: 768px) {
+    padding: 14px 30px;
+    padding-top: 10px;
+    width: 200px;
+    height: 40px;
+    top: 226px;
+    left: 0px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 12px;
+    width: 206px;
+    height: 50px;
+  }
+}
+.anciennesCollections__image {
   width: 100%;
   height: 392px;
   max-width: 320px;
@@ -81,47 +122,5 @@
     background-position: right;
     background-position-y: -400px;
     background-repeat: no-repeat;
-  }
-}
-
-.info__ctaanci {
-  position: absolute;
-  width: 160px;
-  height: 40px;
-  top: 196px;
-  left: 20px;
-  padding: 6px 25px;
-  border: 1px solid #ea7307;
-  @media (min-width: 768px) {
-    padding: 14px 30px;
-    padding-top: 10px;
-    width: 200px;
-    height: 40px;
-    top: 226px;
-    left: 0px;
-  }
-  @media (min-width: 1200px) {
-    padding-top: 12px;
-    width: 206px;
-    height: 50px;
-  }
-}
-.Bandeaubis__content--subtitle {
-  font-family: "open-sans";
-  color: $primary-background-color;
-  position: absolute;
-  top: 80px;
-  width: 200px;
-  padding-left: 20px;
-  @media (min-width: 768px) {
-    position: static;
-    padding-top: 2;
-    width: 320px;
-    padding-left: 0px;
-    font-size: 16px;
-  }
-  @media (min-width: 1100px) {
-    font-size: 18px;
-    width: 475px;
   }
 }
