@@ -68,16 +68,18 @@
 .land.productor {
   opacity: 1;
   fill: $orange-color;
+  stroke-width: 0.6;
 
   &:hover {
     cursor: pointer;
-    stroke-width: 0.6;
+    stroke-width: 1;
   }
 }
 
 .map__countries {
   position: relative;
   max-width: 485px;
+
   @media (min-width: 768px) {
     display: none;
 
@@ -88,7 +90,7 @@
     transform: translateY(30px);
   }
   @media (min-width: 1100px) {
-    transform: translateY(100px);
+    transform: translateY(120px);
   }
 }
 
@@ -103,14 +105,16 @@
     cursor: pointer;
   }
   @media (min-width: 768px) {
+    display: block;
     position: absolute;
     top: 15%;
     right: 3%;
-    width: 20px;
+    width: 10px;
   }
 }
 
 .map__element {
+  box-shadow: 0 0 5px 2px $tertiary-color;
   width: 100%;
   display: none;
   flex-direction: column;
