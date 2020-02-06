@@ -7,27 +7,26 @@
 }
 
 .collection__main-title {
-    text-align: center;
+  text-align: center;
+  font-size: 20px;
+  padding: 16px;
+  color: $primary-font-color;
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 40px;
+  }
+}
+.collection__secondary-title {
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+  color: $secondary-font-color;
+  @media (min-width: 768px) {
     font-size: 20px;
-    padding: 16px;
-    color: $primary-font-color;
-    @media (min-width: 768px) {
-      font-size: 32px;
-    }
-    @media (min-width: 1100px) {
-      font-size: 40px;
-    }
   }
-.collection__secondary-title{
-    font-size: 14px;
-    padding: 16px;
-    text-align: center;
-    color: $secondary-font-color;
-    @media (min-width: 768px) {
-      font-size: 20px;
-    }
-  }
-
+}
 
 .collection__grid {
   padding-top: 32px;
