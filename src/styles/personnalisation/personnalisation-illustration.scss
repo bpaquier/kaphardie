@@ -33,7 +33,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 960px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -142,7 +142,7 @@
 
   .logo__selection--KapHardie {
     position: absolute;
-    top: 90px;
+    top: 20px;
     left: 125px;
 
     @media (min-width: 768px) {
