@@ -1,0 +1,76 @@
+.buy-section__quantity-price {
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .quantity {
+    position: relative;
+    border: 1px solid $primary-font-color;
+    width: 48px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media (min-width: 1100px) {
+      width: 80px;
+      height: 36px;
+    }
+
+    .quantity__icon {
+      svg {
+        width: 10px;
+        height: 8px;
+      }
+    }
+  }
+
+  .quantity.is-choosing {
+    .quantity__icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  .price {
+    font-size: 24px;
+    font-family: $title-font-family;
+
+    @media (min-width: 1100px) {
+      font-size: 32px;
+    }
+  }
+}
+.quantity__choice {
+  position: absolute;
+
+  top: 24px;
+  border: 1px solid $primary-font-color;
+  width: 80px;
+  display: none;
+  flex-direction: column;
+  background-color: $primary-background-color;
+  z-index: 1;
+
+  @media (min-width: 1100px) {
+    top: 36px;
+  }
+  p {
+    padding: 4px 0px;
+    padding-left: 20%;
+
+    &:hover {
+      cursor: pointer;
+      background: $tertiary-color;
+    }
+  }
+}
+
+.quantity__choice.is-visible {
+  display: flex;
+}

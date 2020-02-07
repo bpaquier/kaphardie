@@ -1,0 +1,34 @@
+.personnalisation__rassurance {
+  margin-top: 8px;
+  z-index: -1;
+  width: 80%;
+  max-width: 390px;
+  color: $secondary-font-color;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1100px) {
+    font-size: 10px;
+  }
+
+  .personnalisation__rassurance__part {
+    margin-top: 8px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    svg {
+      color: $secondary-font-color;
+      width: 13px;
+      height: 10px;
+    }
+  }
+}
