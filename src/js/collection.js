@@ -1,3 +1,5 @@
+// Work in progress
+
 let seeButton = document.querySelectorAll(".collection__button");
 let divSpeedBuy = document.querySelectorAll(".collection__speedbuy");
 let quantitySelection = document.querySelectorAll(".quantity");
@@ -47,11 +49,6 @@ let collectionPriceCap = 199.99;
       let quantity = quantityValue[i].getAttribute("value");
       collectionPrice[i].innerHTML = collectionPriceCap * parseInt(quantity) + " €";
       quantityChoosen[i].innerHTML = quantity;
-      // console.log(collectionPrice[i]);
-      // console.log(quantityChoosen[i]);
-      // console.log(Math.floor(i/3));
-      // console.log(quantity);
-      
     });
     
   }
