@@ -87,9 +87,9 @@ function chooseSizePersonnalisation() {
 }
 
 function chooseView() {
-  let $casquettesViews = document.querySelectorAll('.view-picture');
-  let $casquetteOrientation = document.querySelectorAll('.main__pictures');
-  let prevSelection = document.querySelector('.main__pictures.is-visible');
+  let $casquettesViews = document.querySelectorAll('.orientation-picture');
+  let $casquetteOrientation = document.querySelectorAll('.main-pictures__view');
+  let prevSelection = document.querySelector('.main-pictures__view.is-visible');
   for (let i = 0; i < $casquettesViews.length; i++) {
     if ($casquettesViews[i].classList.contains('is-selected')) {
       prevSelection.classList.remove('is-visible');
@@ -101,10 +101,10 @@ function chooseView() {
 
 function chooseTissu() {
   let colors = document.querySelectorAll('.sample--tissu');
-  let picturesFace = document.querySelectorAll('.picture__face');
-  let picturesSide = document.querySelectorAll('.picture__side');
-  let prevPictureFace = document.querySelector('.picture__face.is-visible');
-  let prevPictureSide = document.querySelector('.picture__side.is-visible');
+  let picturesFace = document.querySelectorAll('.view-face__sample');
+  let picturesSide = document.querySelectorAll('.view-side__sample');
+  let prevPictureFace = document.querySelector('.view-face__sample.is-visible');
+  let prevPictureSide = document.querySelector('.view-side__sample.is-visible');
   for (let i = 0; i < colors.length; i++) {
     if (colors[i].classList.contains('is-selected')) {
       prevPictureFace.classList.remove('is-visible');
@@ -121,8 +121,8 @@ function chooseTissu() {
 }
 
 function chooseVisiere() {
-  let $visiereFace = document.querySelector('.visiere-picture--face');
-  let $visiereSide = document.querySelector('.visiere-picture--side');
+  let $visiereFace = document.querySelector('.view-face__sample--visiere');
+  let $visiereSide = document.querySelector('.view-side__sample--visiere');
   let selectedElement = document.querySelector('.sample--visiere.is-selected');
   document.querySelector(
     '.choice__title--visiere'
@@ -137,10 +137,18 @@ function chooseVisiere() {
 }
 
 function chooseBouton() {
-  let boutonNoirFace = document.querySelector('.bouton__face--noir');
-  let boutonBordeauxFace = document.querySelector('.bouton__face--bordeaux');
-  let boutonNoirSide = document.querySelector('.bouton__side--noir');
-  let boutonBordeauxSide = document.querySelector('.bouton__side--bordeaux');
+  let boutonNoirFace = document.querySelector(
+    '.view-face__sample--bouton--noir'
+  );
+  let boutonBordeauxFace = document.querySelector(
+    '.view-face__sample--bouton--bordeaux'
+  );
+  let boutonNoirSide = document.querySelector(
+    '.view-side__sample--bouton--noir'
+  );
+  let boutonBordeauxSide = document.querySelector(
+    '.view-side__sample--bouton--bordeaux'
+  );
   let selectedElement = document.querySelector('.sample__bouton.is-selected');
   document.querySelector(
     '.choice__title--color'
@@ -164,8 +172,10 @@ function chooseBouton() {
 }
 
 function chooseLogoStyle() {
-  let $logoKH = document.querySelector('.logo__selection--kh');
-  let $logoKapHardie = document.querySelector('.logo__selection--KapHardie');
+  let $logoKH = document.querySelector('.view-face__sample--logo--kh');
+  let $logoKapHardie = document.querySelector(
+    '.view-face__sample--logo--KapHardie'
+  );
   let selectedElement = document.querySelector('.logos.is-selected');
   if (selectedElement.classList.contains('logos--hk')) {
     $logoKH.classList.add('is-visible');
@@ -180,7 +190,7 @@ function chooseLogoColor() {
   let selectedElement = document.querySelector(
     '.sample__logoColor.is-selected'
   );
-  let $logos = document.querySelectorAll('.logo__selection svg');
+  let $logos = document.querySelectorAll('.view-face__sample--logo svg');
   let $logosStyle = document.querySelector('.samples__logo--Style');
   if (selectedElement.classList.contains('sample--orange')) {
     $logos.forEach(logo => {
@@ -225,7 +235,7 @@ selectProduct('sample--tissu');
 selectProduct('sample__bouton');
 selectProduct('sample__logoColor');
 selectProduct('logos');
-selectProduct('view-picture');
+selectProduct('orientation-picture');
 chooseQuantity();
 chooseSizePersonnalisation();
 purchaseArticle();
