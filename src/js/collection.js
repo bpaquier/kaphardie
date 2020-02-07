@@ -47,10 +47,10 @@ let collectionPriceCap = 199.99;
       let quantity = quantityValue[i].getAttribute("value");
       collectionPrice[i].innerHTML = collectionPriceCap * parseInt(quantity) + " €";
       quantityChoosen[i].innerHTML = quantity;
-      console.log(collectionPrice[i]);
-      console.log(quantityChoosen[i]);
-      console.log(Math.floor(i/3));
-      console.log(quantity);
+      // console.log(collectionPrice[i]);
+      // console.log(quantityChoosen[i]);
+      // console.log(Math.floor(i/3));
+      // console.log(quantity);
       
     });
     
@@ -67,40 +67,3 @@ let collectionPriceCap = 199.99;
     }
   });
 })();
-
-
-// function chooseQuantity() {
-//   let canClose = false;
-//   let $quantityChoosen = document.querySelector(".quantity__value");
-//   let $QuantitySelection = document.querySelector(".quantity");
-//   let $QuantityList = document.querySelector(".quantity__choice");
-//   let $quantityValue = document.querySelectorAll(".quantity__choice--value");
-//   $priceElt.innerHTML = collectionPrice + " €";
-//   $QuantitySelection.addEventListener("click", function() {
-//     if (!canClose) {
-//       $QuantitySelection.classList.add("is-choosing");
-//       $QuantityList.classList.add("is-visible");
-//       setTimeout(() => {
-//         canClose = true;
-//       }, 10);
-//     }
-//   });
-//   $quantityValue.forEach(element => {
-//     element.addEventListener("click", function() {
-//       let quantity = element.getAttribute("value");
-//       $priceElt.innerHTML = collectionPrice * parseInt(quantity) + " €";
-//       $quantityChoosen.innerHTML = quantity;
-//       $QuantitySelection.classList.remove("is-choosing");
-//       $QuantityList.classList.remove("is-visible");
-//       canClose = false;
-//     });
-//   });
-//   document.addEventListener("click", function() {
-//     if (canClose) {
-//       $QuantitySelection.classList.remove("is-choosing");
-//       $QuantityList.classList.remove("is-visible");
-//       canClose = false;
-//     }
-//   });
-// }
-// chooseQuantity();
