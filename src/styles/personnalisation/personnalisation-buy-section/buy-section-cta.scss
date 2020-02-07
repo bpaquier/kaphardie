@@ -1,0 +1,21 @@
+.buy-section__cta {
+  margin-top: 16px;
+  padding: 16px 40px;
+  border-radius: 3px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $primary-background-color;
+    color: $orange-color;
+    border-color: $orange-color;
+  }
+  @media (min-width: 1100px) {
+    width: 100%;
+  }
+
+  &.is-buying {
+    background-color: rgb(161, 219, 175);
+    color: green;
+    border-color: rgb(161, 219, 175);
+  }
+}

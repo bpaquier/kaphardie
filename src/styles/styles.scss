@@ -4,13 +4,29 @@
 @import 'global/variables.scss';
 @import 'global/global-settings.scss';
 
-@import 'Bandeaux/bandeau-collection.scss';
 @import 'header/header.scss';
 @import 'advantage/advantage.scss';
-@import 'personnalisation/personnalisation-illustration.scss';
-@import 'personnalisation/personnalisation-choice.scss';
-@import 'personnalisation/personnalisation-buySection.scss';
-@import 'map/map-div.scss';
-@import 'footer/footer.scss';
+
+@import 'personnalisation/personnalisation-global.scss';
+
+@import 'personnalisation/personnalisation-illustrations-section/illustration-main-pictures-faceView.scss';
+@import 'personnalisation/personnalisation-illustrations-section/illustration-main-pictures-orientations-choice.scss';
+@import 'personnalisation/personnalisation-illustrations-section/illustration-main-pictures-sideView.scss';
+@import 'personnalisation/personnalisation-illustrations-section/illustration-main-pictures.scss';
+
+@import 'personnalisation/personnalisation-choice-section/personnalisation-choice.scss';
+
+@import 'personnalisation/personnalisation-buy-section/buy-section-general.scss';
+@import 'personnalisation/personnalisation-buy-section/buy-section-quantity-choice.scss';
+@import 'personnalisation/personnalisation-buy-section/buy-section-size-choice.scss';
+@import 'personnalisation/personnalisation-buy-section/buy-section-cta.scss';
+@import 'personnalisation/personnalisation-buy-section/buy-section-rassurances.scss';
+
 @import 'collection/collection.scss';
+
+@import 'map/map-div.scss';
+
 @import 'Bandeaux/anciennesCollections.scss';
+@import 'Bandeaux/bandeau-collection.scss';
+
+@import 'footer/footer.scss';

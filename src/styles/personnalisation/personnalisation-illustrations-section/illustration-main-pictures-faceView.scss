@@ -1,0 +1,186 @@
+.main-pictures__view--face {
+  .view-face__sample {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+    &.is-visible {
+      display: block;
+    }
+  }
+
+  .view-face__sample--logo {
+    display: none;
+
+    &.is-visible {
+      display: block;
+    }
+  }
+
+  .view-face__sample--logo--kh {
+    top: 90px;
+    left: 142px;
+
+    @media (min-width: 768px) {
+      top: 180px;
+      left: 250px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $orange-color;
+
+      @media (min-width: 768px) {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  .view-face__sample--logo--KapHardie {
+    position: absolute;
+    top: 20px;
+    left: 125px;
+
+    @media (min-width: 768px) {
+      top: 160px;
+      left: 220px;
+    }
+
+    svg {
+      width: 40px;
+      fill: $orange-color;
+
+      @media (min-width: 768px) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  .view-face__sample--bouton {
+    position: absolute;
+    width: 15px;
+    display: none;
+
+    &.is-visible {
+      display: block;
+    }
+    @media (min-width: 768px) {
+      width: 27px;
+    }
+  }
+
+  .view-face__sample--1 {
+    left: 1px;
+    width: 102%;
+    @media (min-width: 768px) {
+      width: 103%;
+      left: -8px;
+    }
+  }
+
+  .view-face__sample--1.is-visible ~ .view-face__sample--bouton {
+    left: 90px;
+    top: 11.6px;
+    @media (min-width: 768px) {
+      left: 163px;
+      top: 25px;
+    }
+  }
+
+  .view-face__sample--2 {
+    width: 105%;
+    top: 1px;
+    @media (min-width: 768px) {
+      left: -10px;
+    }
+  }
+
+  .view-face__sample--2.is-visible ~ .view-face__sample--bouton {
+    left: 92px;
+    top: 14.2px;
+    @media (min-width: 768px) {
+      left: 164px;
+      top: 29.5px;
+    }
+  }
+
+  .view-face__sample--3 {
+    width: 102%;
+    left: 2px;
+    @media (min-width: 768px) {
+      top: -2px;
+      left: -5px;
+    }
+  }
+
+  .view-face__sample--3.is-visible ~ .view-face__sample--bouton {
+    left: 92px;
+    top: 12.2px;
+    @media (min-width: 768px) {
+      width: 29px;
+      left: 164px;
+      top: 22.5px;
+    }
+  }
+
+  .view-face__sample--4 {
+    width: 105%;
+    top: 1px;
+    @media (min-width: 768px) {
+      left: -10px;
+      top: 1px;
+    }
+  }
+
+  .view-face__sample--4.is-visible ~ .view-face__sample--bouton {
+    left: 91px;
+    top: 14.8px;
+    @media (min-width: 768px) {
+      width: 29px;
+      left: 164px;
+      top: 29.5px;
+    }
+  }
+
+  .view-face__sample--5 {
+    width: 105%;
+    left: 1px;
+    top: 2px;
+    @media (min-width: 768px) {
+      left: -5px;
+      top: 3px;
+    }
+  }
+
+  .view-face__sample--5.is-visible ~ .view-face__sample--bouton {
+    left: 91px;
+    top: 13.2px;
+    @media (min-width: 768px) {
+      left: 166px;
+      top: 27.5px;
+    }
+  }
+
+  .view-face__sample--visiere {
+    display: none;
+    position: absolute;
+    width: 105%;
+    top: 2px;
+
+    &.is-visible {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      width: 100%;
+      top: 23px;
+      transform: scale(1.06);
+    }
+  }
+}

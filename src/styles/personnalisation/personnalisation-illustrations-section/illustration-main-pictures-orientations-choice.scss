@@ -1,0 +1,46 @@
+.illustration__orientation {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+
+  @media (min-width: 1100px) {
+    margin-bottom: 40px;
+  }
+
+  .orientation-picture {
+    display: flex;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .orientation-picture--front {
+    width: 79px;
+    height: 65px;
+
+    &.is-selected {
+      border-bottom: $orange-color 4px solid;
+    }
+
+    img {
+      margin: auto;
+      width: 63px;
+      height: 49px;
+    }
+  }
+
+  .orientation-picture--profil {
+    width: 102px;
+    height: 65px;
+
+    &.is-selected {
+      border-bottom: $orange-color 2px solid;
+    }
+
+    img {
+      margin: auto;
+      width: 94px;
+      height: 49px;
+    }
+  }
+}
