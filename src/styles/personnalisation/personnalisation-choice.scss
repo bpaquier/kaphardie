@@ -1,4 +1,4 @@
-.personnalisation__choice {
+.personnalisation-content__choice {
   width: 100%;
   max-width: 580px;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.choice {
+.choice__section {
   margin-top: 24px;
   width: 80%;
   border-bottom: 1px $primary-font-color solid;
@@ -95,7 +95,7 @@
   }
 }
 
-.logos {
+.logo__style {
   margin-right: 32px;
   padding: 8px;
   padding-bottom: 0;
@@ -112,12 +112,12 @@
     border-bottom: 3px solid $secondary-color;
   }
 
-  .logo-sample {
+  .logo__content {
     font-size: 24px;
   }
 }
 
-.samples__logo {
+.logos__samples {
   flex-direction: column;
   justify-content: flex-end;
 
@@ -126,13 +126,13 @@
     justify-content: space-between;
   }
 
-  .samples__logo--Style {
+  .logos__samples--style {
     color: $orange-color;
     display: flex;
     align-items: center;
   }
 
-  .samples__logo--Color {
+  .logos__sample--color {
     margin-top: 8px;
     padding: 8px;
     display: flex;

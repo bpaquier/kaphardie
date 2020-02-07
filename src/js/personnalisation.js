@@ -176,7 +176,7 @@ function chooseLogoStyle() {
   let $logoKapHardie = document.querySelector(
     '.view-face__sample--logo--KapHardie'
   );
-  let selectedElement = document.querySelector('.logos.is-selected');
+  let selectedElement = document.querySelector('.logo__style.is-selected');
   if (selectedElement.classList.contains('logos--hk')) {
     $logoKH.classList.add('is-visible');
     $logoKapHardie.classList.remove('is-visible');
@@ -188,10 +188,10 @@ function chooseLogoStyle() {
 
 function chooseLogoColor() {
   let selectedElement = document.querySelector(
-    '.sample__logoColor.is-selected'
+    '.logo-color__sample.is-selected'
   );
   let $logos = document.querySelectorAll('.view-face__sample--logo svg');
-  let $logosStyle = document.querySelector('.samples__logo--Style');
+  let $logosStyle = document.querySelector('.logos__samples--style');
   if (selectedElement.classList.contains('sample--orange')) {
     $logos.forEach(logo => {
       logo.style.fill = '#ea7307';
@@ -233,8 +233,8 @@ function resetBuySection() {
 selectProduct('sample--visiere');
 selectProduct('sample--tissu');
 selectProduct('sample__bouton');
-selectProduct('sample__logoColor');
-selectProduct('logos');
+selectProduct('logo-color__sample');
+selectProduct('logo__style');
 selectProduct('orientation-picture');
 chooseQuantity();
 chooseSizePersonnalisation();
