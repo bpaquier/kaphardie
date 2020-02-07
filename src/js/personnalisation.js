@@ -229,19 +229,3 @@ selectProduct('view-picture');
 chooseQuantity();
 chooseSizePersonnalisation();
 purchaseArticle();
-
-/* function createPath() {
-  path = '';
-  let image = document.createElement('img');
-  document.querySelectorAll('.path.is-selected').forEach(function(element) {
-    path += element.getAttribute('value');
-  });
-  image.src = 'assets/cassequettes/' + path + '.png';
-  image.classList.add('picture__face');
-  image.classList.add('is-visible');
-  image.classList.add('picture--1');
-  document
-    .querySelector('.main__pictures.main__pictures--face')
-    .appendChild(image);
-  console.log(path);
-}  */
