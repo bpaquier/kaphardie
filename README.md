@@ -9,7 +9,7 @@ Création d’une landing page.
 Projet de fin de semestre UX-UI
 
 
-## contributors :
+## Contributors :construction_worker: :
 
  - Bastien Paquier
  - Constance Pétillot
