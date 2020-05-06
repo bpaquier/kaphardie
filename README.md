@@ -11,11 +11,11 @@ Projet de fin de semestre UX-UI
 
 ## contributors :
 
- - [Bastien Paquier]
- - [Constance Pétillot]
- - [Lucas Roche]
- - [Nathan Stampfli]
- - [Quentin Trouvé]
+ - Bastien Paquier
+ - Constance Pétillot
+ - Lucas Roche
+ - Nathan Stampfli
+ - Quentin Trouvé
 
 
 ## Usage : :white_check_mark:
