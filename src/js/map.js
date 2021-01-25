@@ -16,7 +16,7 @@ let $crossButton = document.querySelector('.cross');
           previousSelection.classList.remove('map__element--selected');
           countriesDescription[i].classList.add('map__element--selected');
           previousSelection = countriesDescription[i];
-        }, 0.2);
+        }, 0.8);
         setTimeout(() => {
           isDescription = true;
         }, 0.1);
@@ -58,13 +58,4 @@ let $crossButton = document.querySelector('.cross');
       countriesDescription[0].classList.add('map__element--selected');
     }
   });
-})();
-
-(function checkIfDeviceIstactile() {
-  try {
-    document.createEvent('TouchEvent');
-    $crossButton.getElementsByClassName.display = 'block';
-  } catch (e) {
-    return;
-  }
 })();

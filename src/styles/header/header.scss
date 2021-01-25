@@ -161,7 +161,7 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     display: block;
     @include iconBurger;
     transition: transform 0.3s;
@@ -284,6 +284,7 @@
 
   .header__icon:hover {
     fill: $orange-color;
+    cursor: pointer;
   }
   
   .header__linkLogo {
@@ -296,7 +297,7 @@
 
   .header__logoKH {
     display: block;
-    font-family: "Baumans";
+    font-family: 'Baumans';
     font-size: 28px;
     padding-left: 20px;
 
@@ -316,7 +317,7 @@
     text-transform: capitalize;
 
     li a:after {
-      content: "";
+      content: '';
       display: block;
       margin: auto;
       height: 2px;
